@@ -35,11 +35,12 @@ sources:
     relationship: formalizes
     author_endorsement: participated
     note:
-      "Submitted 2026-09-29. The source author requested this formalization and will personally
-      verify definitions and theorem statements. That review is pending. The original arXiv source
-      archive and unmodified TeX are included in sources/; the TeX includes its bibliography.
-      SHA-256: 022b7c53635f6e18b93bbc60191e7c9c28288b0f813124e3365b5025722b67b9. Code licensing does
-      not relicense the paper."
+      "Submitted 2026-09-29. The source author requested this formalization and has completed human
+      review of its definitions and theorem statements, personally verified the submission, and read
+      Challenge.lean. The original arXiv source archive and unmodified TeX are included in sources/;
+      the TeX includes its bibliography. SHA-256:
+      022b7c53635f6e18b93bbc60191e7c9c28288b0f813124e3365b5025722b67b9. Code licensing does not
+      relicense the paper."
 related_formalizations:
   - id: sha256:f1ce48b29c3c733bcb1ecf3c8869f75c3826e089da50f37f37ae65f6c9420718
     relationship: adapts
@@ -100,15 +101,15 @@ automation:
       prompting_notes:
         Prepare a Palomar submission in Local-Conjugacy-Formalized, namespace LocalConjugacy,
         closely matching every Theorem, Corollary, Proposition and both counterexamples in
-        arXiv:2609.37678; include a read-back. The author will personally verify definitions and
-        theorem statements. Lemma 1.2 is included as well.
+        arXiv:2609.37678; include a read-back. The requested personal author verification of
+        definitions and theorem statements is complete. Lemma 1.2 is included as well.
   spend_usd: not tracked
   notes:
     The human source author supplied the mathematics, requested the formalization, and directed the
     scope and fidelity requirements. The agent adapted existing proofs, added explicit concrete
     identifications and fuller counterexample statements, and performed the documented read-back.
-    Human statement review is pending. Local verification is distinguished from Palomar verification
-    and registration.
+    Human statement review is complete. Local verification is distinguished from Palomar
+    verification and registration.
 fidelity:
   divergences:
     No known statement-level weakening after the read-back in docs/read-back.md. Right exponent
@@ -123,16 +124,17 @@ fidelity:
     explanatory differences.
 review:
   status: author-verified
-  reviewers: []
+  reviewers:
+    - Michael C. Burkhart
   notes:
     Agent read-back against the downloaded arXiv v1 TeX; all thirteen exact compiled statement
     types, 94 shared definitions and 66 helper proofs match. All 926 local supporting theorem
     declarations were audited for transitive axioms. The local unsandboxed Comparator passed, with
     Lean, NanoDa and con-ron accepting the exported proof (28,033 declarations reported by con-ron).
     See reports/validation.json and reports/local-comparator-validation.json. This is not an
-    official Palomar or sandboxed verification. The source author has reserved personal verification
-    of definitions and statements before submission; that review was completed. No publication,
-    submission or registration has occurred.
+    official Palomar or sandboxed verification. M.C.B. has completed human review of the definitions
+    and theorem statements, personally verified the submission, and read Challenge.lean. No
+    publication, submission or registration has occurred.
 alignment:
   namespace: LocalConjugacy
   statements:

@@ -5,10 +5,11 @@ Lean 4 formalization of Burkhart's
 All eleven numbered results (including Lemma 1.2) and both Introduction
 counterexamples are compared declarations in the namespace `LocalConjugacy`.
 
-Start the human review with [Challenge.lean](Challenge.lean), then the
-[read-back against arXiv v1](docs/read-back.md). The
-[proof correspondence](docs/manuscript-correspondence.md) maps every result to
-its proof and explains the proof adaptations.
+M.C.B. has completed human review, personally verified the submission, and read
+[Challenge.lean](Challenge.lean). The agent's
+[read-back against arXiv v1](docs/read-back.md) documents the statement
+comparison. The [proof correspondence](docs/manuscript-correspondence.md) maps
+every result to its proof and explains the proof adaptations.
 [The exact arXiv source](sources/local-conjugacy-prosolvable-re.tex) and its
 original downloaded archive are included unchanged. Its bibliography is embedded
 in the TeX. The [source inventory](reports/source-result-inventory.json) records
@@ -30,14 +31,14 @@ subgroup `C₃ × S₃`, and proves the failure of global inclusion.
 
 The full build and audit passed. The local unsandboxed Comparator also passed,
 with Lean, NanoDa, and con-ron accepting the exported proof; see
-[verification evidence](reports/README.md). Palomar's official sandboxed run and
-your human statement review remain pending.
+[verification evidence](reports/README.md). Human statement review is complete;
+Palomar's official sandboxed run remains pending.
 
 The proof development contains no admitted proofs or custom axioms.
 `Challenge.lean` imports Mathlib alone and deliberately leaves thirteen target
 proofs as `sorry`. `Solution.lean` imports the proved development and does not
-import Challenge. Your human verification of definitions and statements is
-pending; metadata does not describe it as complete.
+import Challenge. The metadata records the completed human verification of
+definitions and statements as `author-verified`.
 
 The pinned versions are Lean `v4.35.0-rc2` and Mathlib
 `065356127b1dc0016f66b7283ce0ce2c4055aa55`. From a clean checkout with Elan:

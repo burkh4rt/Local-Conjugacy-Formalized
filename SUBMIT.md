@@ -6,12 +6,12 @@ Prepared against
 toolchain is v4.35.0-rc2, which is pinned here with matching Mathlib. Recheck the
 requirements at submission time.
 
-1. Review [Challenge.lean](Challenge.lean), using
-   [the read-back](docs/read-back.md) and the unchanged TeX in `sources/`. The
-   Challenge is the statement of record and imports Mathlib alone. Check the
-   group/cohomology definitions, finite hypotheses, action conventions, and both
-   concrete counterexamples. Only after completing your review should you update
-   `review` in `formalization.yaml` to say it is author-verified.
+1. Human review is complete. Michael C. Burkhart has personally verified the
+   submission and read [Challenge.lean](Challenge.lean), the statement of record,
+   which imports Mathlib alone. The review covers the definitions and theorem
+   statements; [the agent's read-back](docs/read-back.md) and the unchanged TeX
+   in `sources/` document the comparison. The `review` section in
+   `formalization.yaml` records the completed review as `author-verified`.
 2. Run `lake exe cache get` followed by `bash scripts/check.sh`. Its thirteen
    intentional Challenge holes are expected. The Solution and all local
    supporting proofs must depend only on the three standard Lean axioms. The

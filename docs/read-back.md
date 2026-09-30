@@ -3,8 +3,9 @@
 This is the agent's second-pass comparison, performed on 2026-09-30 against the
 actual source downloaded from <https://arxiv.org/src/2609.37678v1>, not merely
 against the older local manuscript or its previous review notes. It is not an
-independent human review. Michael C. Burkhart's planned verification of the
-definitions and theorem statements remains pending.
+independent human review. Michael C. Burkhart has separately completed human
+review of the definitions and theorem statements, personally verified the
+submission, and read `Challenge.lean`.
 
 The unmodified TeX is `sources/local-conjugacy-prosolvable-re.tex`, SHA-256
 `022b7c53635f6e18b93bbc60191e7c9c28288b0f813124e3365b5025722b67b9`. The original
@@ -18,8 +19,8 @@ counterexamples occur in the Introduction. All thirteen are selected in
 
 The line numbers below refer to the exact TeX snapshot. All Lean names have
 prefix `LocalConjugacy.`. “Matches” means the mathematical statement matches
-under the conventions explained below, not that an independent expert has
-approved it.
+under the conventions explained below. These entries record the agent's
+comparison; the completed author review is recorded in `formalization.yaml`.
 
 | Preprint                  | Source line | Lean declaration            | Read-back                                                                                                                                                                                                                                                                                                                       |
 | ------------------------- | ----------: | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

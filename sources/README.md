@@ -13,4 +13,5 @@ the project validation script.
 
 The manuscript retains its author's copyright and arXiv distribution terms; the
 code's Apache-2.0 license does not relicense it. The author requested this
-formalization and will review its definitions and statements before submission.
+formalization and has completed human review of its definitions and statements,
+personally verified the submission, and read `Challenge.lean`.

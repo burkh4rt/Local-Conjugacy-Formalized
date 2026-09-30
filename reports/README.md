@@ -29,8 +29,9 @@ Linux route. No remote CI or official Palomar run is claimed.
 Its `full_comparator_run`, `nanoda_run`, and `con_ron_run` flags are false
 because that script itself does not run the kernels. The subsequent successful
 kernel replay has its own hash-bound `local-comparator-validation.json`.
-`submission_ready: false` also preserves the pending human statement review and
-official submission workflow; it does not indicate an omitted target proof.
+`submission_ready: false` still reflects the pending official submission
+workflow; human statement review is complete. It does not indicate an omitted
+target proof.
 
 The independent Challenge has thirteen deliberate `sorry` proof holes. They are
 expected by the Challenge/Solution workflow and occur in no Solution proof. The
@@ -44,5 +45,6 @@ source hashes, rather than older development checks, are the evidence for this
 snapshot.
 
 The agent's mathematical read-back is `../docs/read-back.md`. It remains separate
-from machine checking. Michael C. Burkhart's planned human review is pending, and
-no publication, Palomar submission, or registration has occurred.
+from machine checking. Michael C. Burkhart has completed human review, personally
+verified the submission, and read `Challenge.lean`. No publication, Palomar
+submission, or registration has occurred.
