@@ -1,0 +1,31 @@
+Local conjugacy in prosolvable groups — Lean development
+Prepared for M.C.B. with AI assistance from OpenAI Codex.
+
+This project directly adapts lcp-formalized; its source fingerprints are in
+reports/reused-lcp-sources.json. That project in turn adapts the development in
+local-conjugacy-prosolvable-formalized. Its source-file fingerprints are
+recorded in reports/reused-sources.json. The current manuscript snapshot is
+identified in reports/source-fingerprints.json.
+
+The original mathematical manuscript and cited literature retain their own
+copyright and licenses; this repository's Apache-2.0 license covers the new
+formalization code and documentation, not those cited works.
+
+The Apache-2.0 license text and metadata validator were taken from
+PalomarRegistry/PalomarTemplate, commit
+d06eea17a234d0936798a78fa23f8a69e80374a7 (Apache-2.0).
+The bundled-Comparator workflow follows the PalomarTemplate instructions
+at https://github.com/PalomarRegistry/PalomarTemplate/blob/main/scripts/verify-comparator.sh
+as rechecked on 2026-09-30.
+
+QuotientReduction.lean adapts an earlier local Lean file,
+_local_conjugacy_inclusion.lean, found in the user's prove2me_workspace.
+Its fingerprint is recorded in reports/source-fingerprints.json. It supplies
+only an algebraic reduction, not a proof of the manuscript's full corollary.
+
+Mathlib and its dependencies retain their respective licenses and authorship.
+
+The productEquiv construction in LocalConjugacy/NilpotentCoefficients.lean
+adapts the proof of Sylow.directProductOfNormal from Mathlib.
+Copyright (c) 2018 Chris Hughes. Authors: Chris Hughes, Thomas Browning.
+Mathlib is distributed under the Apache-2.0 license.

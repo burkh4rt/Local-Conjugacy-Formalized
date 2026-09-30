@@ -1,0 +1,25 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "LocalConjugacy.theorem_1_1",
+    "LocalConjugacy.lemma_1_2",
+    "LocalConjugacy.corollary_1_3",
+    "LocalConjugacy.corollary_1_4",
+    "LocalConjugacy.proposition_2_1",
+    "LocalConjugacy.proposition_2_2",
+    "LocalConjugacy.proposition_2_3",
+    "LocalConjugacy.proposition_3_1",
+    "LocalConjugacy.proposition_3_2",
+    "LocalConjugacy.proposition_4_1",
+    "LocalConjugacy.proposition_4_2",
+    "LocalConjugacy.counterexample_quaternion",
+    "LocalConjugacy.counterexample_heisenberg"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

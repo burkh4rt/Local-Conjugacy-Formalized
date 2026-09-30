@@ -1,0 +1,121 @@
+import LocalConjugacy.Cohomology
+
+/-!
+Statement-review targets for the manuscript snapshot in `sources/`.
+This is a statement template, not a Lean module in the proof development.
+Challenge.lean reproduces these statements independently with deliberate
+holes. Propositions 2.1–2.2 allow locally finite discrete coefficients.
+Proposition 2.3 is the Hall restriction result. Lemma 1.2 has finite nilpotent
+coefficients, and Proposition 3.2 assumes finite N in a profinite ambient group.
+-/
+
+namespace LocalConjugacy
+
+section Main
+variable {G : Type*} [Group G] [TopologicalSpace G]
+
+/-- Theorem 1.1, `thm:loc_conj`. Closed supplements of the pronilpotent
+normal subgroup are conjugate exactly when they are locally conjugate. -/
+theorem theorem_1_1 [Profinite G] (N H K : Subgroup G) [N.Normal]
+    (hN : IsClosed (N : Set G)) (hH : IsClosed (H : Set G))
+    (hK : IsClosed (K : Set G)) (hpron : Pronilpotent N)
+    (hcase : Prosupersolvable G ∨ Pronilpotent (G ⧸ N))
+    (hHN : Supplements N H) (hKN : Supplements N K) :
+    Conjugate H K ↔ LocallyConjugate H K := by sorry
+
+/-- Corollary 1.3, `thm:loc_inclusion`. -/
+theorem corollary_1_3 [Profinite G] (N J H : Subgroup G)
+    (hN : IsClosed (N : Set G)) (hJ : IsClosed (J : Set G))
+    (hH : IsClosed (H : Set G)) (hsplit : Splits N J)
+    (hpron : Pronilpotent N) (hcase : Prosupersolvable G ∨ Pronilpotent J)
+    (hnormal : IntersectionNormal N H) (hlocal : LocallyContains H J) :
+    ∃ g : G, conjugate g J ≤ H := by sorry
+
+/-- Corollary 1.4, `cor:fix_pt`. No topology or continuity of the action on
+`Ω` is assumed; closedness is imposed on every point stabilizer explicitly. -/
+theorem corollary_1_4 [Profinite G] {Ω : Type*} [MulAction G Ω] [Nonempty Ω]
+    (N J : Subgroup G) (hN : IsClosed (N : Set G)) (hJ : IsClosed (J : Set G))
+    (hsplit : Splits N J) (hpron : Pronilpotent N)
+    (hcase : Prosupersolvable G ∨ Pronilpotent J)
+    (htrans : Transitive (G := G) (Ω := Ω))
+    (hclosed : ∀ x : Ω, IsClosed (MulAction.stabilizer G x : Set G))
+    (hnormal : ∃ x : Ω, IntersectionNormal N (MulAction.stabilizer G x))
+    (hlocal : SylowFixedPoints (Ω := Ω) J) : HasFixedPoint (Ω := Ω) J := by sorry
+
+/-- Proposition 3.1, `prop:comps`, with finite N as in arXiv v1. -/
+theorem proposition_3_1 [Profinite G] (N H K : Subgroup G) [N.Normal] [Finite N]
+    (hN : IsClosed (N : Set G)) (hH : IsClosed (H : Set G))
+    (hK : IsClosed (K : Set G)) (hpron : Pronilpotent N)
+    (hcase : Prosupersolvable G ∨ Pronilpotent (G ⧸ N))
+    (hHN : Supplements N H) (hKN : Supplements N K)
+    (hNH : N ⊓ H = ⊥) (hNK : N ⊓ K = ⊥) :
+    Conjugate H K ↔ LocallyConjugate H K := by sorry
+
+/-- Proposition 3.2, `prop:thm_main_n_nilpotent`: Theorem 1.1 for finite N. -/
+theorem proposition_3_2 [Profinite G] (N H K : Subgroup G) [N.Normal] [Finite N]
+    (hN : IsClosed (N : Set G)) (hH : IsClosed (H : Set G))
+    (hK : IsClosed (K : Set G)) (hpron : Pronilpotent N)
+    (hcase : Prosupersolvable G ∨ Pronilpotent (G ⧸ N))
+    (hHN : Supplements N H) (hKN : Supplements N K) :
+    Conjugate H K ↔ LocallyConjugate H K := by sorry
+
+/-- Proposition 4.1, `thm:loc_inclusion_ab`. -/
+theorem proposition_4_1 [Profinite G] (N H K : Subgroup G) [N.Normal]
+    (hN : IsClosed (N : Set G)) (hH : IsClosed (H : Set G))
+    (hK : IsClosed (K : Set G)) (hcomm : ∀ n m : N, n * m = m * n)
+    (hHN : Supplements N H) (hKN : Supplements N K)
+    (hlocal : LocallyContains H K) : ∃ g : G, conjugate g K ≤ H := by sorry
+
+/-- Proposition 4.2, `thm:fix_pt_ab`. -/
+theorem proposition_4_2 [Profinite G] {Ω : Type*} [MulAction G Ω] [Nonempty Ω]
+    (N H : Subgroup G) [N.Normal] (hN : IsClosed (N : Set G))
+    (hH : IsClosed (H : Set G)) (hcomm : ∀ n m : N, n * m = m * n)
+    (hHN : Supplements N H) (htrans : Transitive (G := G) (Ω := Ω))
+    (hclosed : ∀ x : Ω, IsClosed (MulAction.stabilizer G x : Set G))
+    (hlocal : SylowFixedPoints (Ω := Ω) H) : HasFixedPoint (Ω := Ω) H := by sorry
+end Main
+
+section Cohomology
+variable {J N : Type*} [Group J] [Group N]
+  [TopologicalSpace J] [TopologicalSpace N] [MulDistribMulAction J N]
+
+/-- Lemma 1.2, `lem:loc_conj`: the actual simultaneous restriction map
+on H¹ is bijective, with finite nilpotent coefficient group N. -/
+theorem lemma_1_2 [Profinite J] [DiscreteTopology N] [Finite N] [Group.IsNilpotent N]
+    [ContinuousSMul J N]
+    (hcase : Prosupersolvable (ActionProduct J N) ∨ Pronilpotent J)
+    (P : PrimeDivisor J → Subgroup J) (hP : ∀ p, IsSylowPro p.val.val ⊤ (P p)) :
+    Function.Bijective (primaryRestriction (N := N) P) ∧
+      primaryRestriction (N := N) P default = default := by sorry
+
+/-- Proposition 2.1, `prop:fixed_cocycle`, with locally finite discrete coefficients.
+Local finiteness permits reduction to a finite invariant coefficient subgroup. -/
+theorem proposition_2_1 [Profinite J] [IsTopologicalGroup N] [DiscreteTopology N]
+    [ContinuousSMul J N] (hfinite : LocallyFiniteGroup N) (p p₀ : ℕ) (hp : p.Prime) (hp₀ : p₀.Prime) (hne : p₀ ≠ p)
+    (hN : IsPGroup p N) (J₀ Q : Subgroup J) [J₀.Normal]
+    (hJ₀ : IsClosed (J₀ : Set J)) (hQ : IsClosed (Q : Set J))
+    (hcyclic : Procyclic Q) (hpro : IsProP p₀ Q)
+    (f : Cocycle (N := N) J₀) (hinv : InvariantUnder Q J₀ f) :
+    ∃ g : Cocycle (N := N) J₀, Cohomologous f g ∧
+      (∀ (q : J) (hq : q ∈ Q) (x : J) (hx : x ∈ J₀)
+        (hqx : q⁻¹ * x * q ∈ J₀),
+        q • g.toFun ⟨q⁻¹ * x * q, hqx⟩ = g.toFun ⟨x, hx⟩) ∧
+      ∀ (q : J) (hq : q ∈ Q) (hq₀ : q ∈ J₀), g.toFun ⟨q, hq₀⟩ = 1 := by sorry
+
+/-- Proposition 2.2, `prop:coprime_iso`. -/
+theorem proposition_2_2 [Profinite J] [IsTopologicalGroup N] [DiscreteTopology N]
+    [ContinuousSMul J N] (hfinite : LocallyFiniteGroup N) (p p₀ : ℕ) (hp : p.Prime) (hp₀ : p₀.Prime) (hne : p₀ ≠ p)
+    (hJ : Prosolvable J) (hN : IsPGroup p N) (J₀ : Subgroup J) [J₀.Normal]
+    (hJ₀ : IsClosed (J₀ : Set J)) (hindex : J₀.index = p₀) :
+    Function.Bijective (stableRestriction (N := N) J₀) := by sorry
+
+/-- Proposition 2.3, `prop:res_pi`: restriction to any Hall subgroup for
+the primes at most p bijects all cohomology classes. -/
+theorem proposition_2_3 [Profinite J] [DiscreteTopology N] [Finite N]
+    [ContinuousSMul J N] (p : ℕ) (hp : p.Prime) (hN : IsPGroup p N)
+    (hG : Prosupersolvable (ActionProduct J N))
+    (Q : Subgroup J) (hQ : IsHallPro {r | r ≤ p} Q) :
+    Function.Bijective (restrictH1 (N := N) (show Q ≤ ⊤ from le_top)) := by sorry
+end Cohomology
+
+end LocalConjugacy

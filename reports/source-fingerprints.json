@@ -1,0 +1,21 @@
+{
+  "manuscript": {
+    "path": "sources/local-conjugacy-prosolvable-re.tex",
+    "sha256": "022b7c53635f6e18b93bbc60191e7c9c28288b0f813124e3365b5025722b67b9",
+    "url": "https://arxiv.org/src/2609.37678v1"
+  },
+  "arxiv_archive": {
+    "path": "sources/arxiv-2609.37678v1.tar.gz",
+    "sha256": "618f06230c8a111e129e1cb5d7df09813bca24ddb8646f5d7dd02f899c8e8802"
+  },
+  "prior_quotient_reduction": {
+    "file": "_local_conjugacy_inclusion.lean",
+    "sha256": "e01d6e5c43ba52cb970b533dd2abed2572fae1587c8cc3a24c0960110b3043b3",
+    "note": "Fingerprint inherited from the reused development; see NOTICE."
+  },
+  "reused_development": {
+    "path": "reports/reused-sources.json",
+    "aggregate_sha256": "8a7711561afd8ec380b71889701ded0865a956039af7429341482dd09069ae99"
+  },
+  "note": "arXiv v1 includes its bibliography in the TeX; no separate .bib file is needed."
+}

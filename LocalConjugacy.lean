@@ -1,0 +1,25 @@
+module
+
+public import LocalConjugacy.Definitions
+public import LocalConjugacy.Cohomology
+public import LocalConjugacy.InvariantRestriction
+public import LocalConjugacy.QuotientReduction
+public import LocalConjugacy.Actions
+public import LocalConjugacy.Compactness
+public import LocalConjugacy.FiniteQuotientConjugacy
+public import LocalConjugacy.CounterexampleResults
+public import LocalConjugacy.AbelianFixedPoint
+public import LocalConjugacy.FixedCocycle
+public import LocalConjugacy.CoprimeCohomology
+public import LocalConjugacy.CoprimeRestriction
+public import LocalConjugacy.LocallyFiniteCocycles
+public import LocalConjugacy.ZornRestriction
+public import LocalConjugacy.NilpotentCoefficients
+public import LocalConjugacy.SupersolvableCoefficients
+public import LocalConjugacy.ManuscriptCohomology
+public import LocalConjugacy.NonabelianComplement
+public import LocalConjugacy.ComplementConjugacy
+public import LocalConjugacy.SupplementConjugacy
+public import LocalConjugacy.FixedPointCorollary
+
+@[expose] public section

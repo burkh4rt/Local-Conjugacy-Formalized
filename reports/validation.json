@@ -1,0 +1,6993 @@
+{
+  "checked_at_utc": "2026-09-30T19:29:48.334916+00:00",
+  "check": "Compiled structural type comparison and transitive axiom audit; check.sh builds first",
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "mathlib_revision": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "challenge_sha256": "a9eec6617b3db42892d9b68671177523bcb05b1b3c42329de108b213a4b927c0",
+  "manuscript_sha256": "022b7c53635f6e18b93bbc60191e7c9c28288b0f813124e3365b5025722b67b9",
+  "solution_source_hashes": {
+    "LocalConjugacy/AbelianComplement.lean": "8ca067f4a5631abb0e9ea05952b8f7e517c192f010f7d7c05becf62b18b70a6a",
+    "LocalConjugacy/AbelianFiniteKernel.lean": "cd11f7eb62880bb9b960503c376d8a4b213f71879cfb507a7a5bce0cc07b9b32",
+    "LocalConjugacy/AbelianFixedPoint.lean": "8f93766006c61092e79db9fcbe3812999046551795fd234c90506a4d9d10baf1",
+    "LocalConjugacy/AbelianInclusion.lean": "b016edbbb0d667fac3b0c7e6d235a77ca9e9a6484cdebc7724acbcc6dac51450",
+    "LocalConjugacy/AbelianManuscript.lean": "53ee7a27c4b41465213079010bda3f32b905ff7f596962244f73805aa8aef01b",
+    "LocalConjugacy/ActionProductTopology.lean": "589d56cec4477c45e97d35aa5717ef85eb428130d97614e0e6ce9e67993b19ef",
+    "LocalConjugacy/Actions.lean": "aa0056094918164d5ea4aa9005c77767fce2cf728c8aa719aecde2bb0256743d",
+    "LocalConjugacy/CocycleActions.lean": "f9f51d266cd829c1509c87ba65ab8e5719ceb29925c681f85efd08e65cfded8e",
+    "LocalConjugacy/CocycleDescent.lean": "adc267b01f9c3ca5a956eada3daf06cae797ed23a56ba7c339dc58800ded5ed2",
+    "LocalConjugacy/CocycleExtension.lean": "4f662d14c761340bfc3ecbcc63b5ec561c07f35c17e1243190130f8a2721ed34",
+    "LocalConjugacy/CocycleFiniteQuotient.lean": "c788f7f67ef9f0c10c2e2b5245b4e2df8223ee20b298e4e5f53364cbc6519fb2",
+    "LocalConjugacy/CocycleInjectivity.lean": "7d693b54b8293918efa4dc47d409ffde62dade599194946625bf304aaea6890f",
+    "LocalConjugacy/CocycleInvarianceSubgroup.lean": "37f603273a0a074ce6a7ec197427ef04301985383764f038433d8a2866e9c09a",
+    "LocalConjugacy/CocycleNeighborhood.lean": "9c8a06f4b727c3b7ad25f081ffaa13009d1aeb06e98d088d50348b9e78154a29",
+    "LocalConjugacy/CocycleProducts.lean": "8115a215ba3bd79273a5c773b244a5a98e7acd6629f3914be8516c1434f75074",
+    "LocalConjugacy/CocycleRebase.lean": "d0a92a21d58ffdb2a0b395ebfbbfac1c626c0a4414c39aa2e346afb0f3fda3bc",
+    "LocalConjugacy/CocycleZorn.lean": "dccf2340810fabbb60906ee7be960072aaffbf8021648cb13fde198e5cce78cf",
+    "LocalConjugacy/Cohomology.lean": "73224417ccd92ab772a93efaf40188aa1362a8024b6b079462a6d85671507559",
+    "LocalConjugacy/Compactness.lean": "83b2b502244a0a4079411377a9e76bfb326e3a9939952320627dd72b071f6d44",
+    "LocalConjugacy/ComplementConjugacy.lean": "d586d108862b57cf658382dce61da826065d326a283953040908c8005d31f16c",
+    "LocalConjugacy/ComplementSupersolvable.lean": "dab2bbfcea834e22e703b251638edec9113c0ead531f1cbf189e986a8f4217dd",
+    "LocalConjugacy/Conjugation.lean": "5d87715b2d57870a6a6412573ceda32de47c1b492a0afe0056378af53b07cccd",
+    "LocalConjugacy/CoprimeCohomology.lean": "f5aab07ab811bffe61dba804bf39d6e856e37df75d137068b19e8358faea76de",
+    "LocalConjugacy/CoprimeRestriction.lean": "a44b2f97ca3c6d281ef59e78c227f473e1aa519dfe2ad77a4974db71c546f2af",
+    "LocalConjugacy/CounterexampleResults.lean": "cdb980f2a45f96a6cbd15c84c2bd3eba736e0dfeaebf6ca5a771a51fe30940cb",
+    "LocalConjugacy/Counterexamples/Heisenberg.lean": "1695b32e00812e4dd816912a48bd6fc664ed82a8f1f36db5b0a924c79628e3ed",
+    "LocalConjugacy/Counterexamples/HeisenbergIdentification.lean": "f6fc0b83e1c2c73fb80d306d846922ae019015e253974ec84d1f5fe2385e9a6b",
+    "LocalConjugacy/Counterexamples/HeisenbergStructure.lean": "a22c075ae383904392921d438306d535c61c6ee83789354734b597f3ec826f4b",
+    "LocalConjugacy/Counterexamples/HeisenbergSupersolvable.lean": "841b2a2ccabed0ef502c56a82d117711488ad86aabdcc08cb6c60210daf94d82",
+    "LocalConjugacy/Counterexamples/Quaternion.lean": "a5ab6f41f931e24a4d26cbd4140b6fa549317c0250a050476c56f6c17568b4b1",
+    "LocalConjugacy/Counterexamples/QuaternionComplements.lean": "6a6175343755dd9b655498e0bf9ac72a72dffce5c2b796b80d5ef7b09ce2576e",
+    "LocalConjugacy/Counterexamples/QuaternionMatrix.lean": "69cce7039c67d4d688a96bf5101fdda9b0a9f8a88ede34531130e84772889379",
+    "LocalConjugacy/Counterexamples/QuaternionSylow.lean": "e6c4da8101ada081693271444ecf4cd6a41b720d3614021eb9fa56c991caba02",
+    "LocalConjugacy/Definitions.lean": "956d511a4109fdd26f3a2e1a7e255a75a72d5f1e521a9e7d43c0271f2ffa5c5d",
+    "LocalConjugacy/ExampleDefinitions.lean": "5835cb395b215e7df3f4fa1a133a93c6c3c8c50ba86ccd8424c37c29ab7938ac",
+    "LocalConjugacy/FiniteAbelianCohomology.lean": "06d8c671d11e26ed66be1023f2a9f6b835ed120b20460acbc76f24231a1b8dfb",
+    "LocalConjugacy/FiniteCoefficientSubgroup.lean": "2497863b12f393a85395feee747717bf6566e08319d54132c82d7064e4f31eb2",
+    "LocalConjugacy/FiniteConjugacyTools.lean": "91d3ee2e2d3dad4066168c98c332d4bfd0f0be6d1b5d967d613b2fef1ad346d7",
+    "LocalConjugacy/FiniteHall.lean": "fe0f3f726d438591b493f0db53f922a36e60f23e569b3729f11908d2738833dc",
+    "LocalConjugacy/FiniteKernelConjugacy.lean": "b56be507743d9af5bde93a0e3eb42e8d21bf94329616c2d750a572eb95489e98",
+    "LocalConjugacy/FiniteKernelSylow.lean": "95e2e5f7786858198d5dc5757f3b6aeb2acf87f073219b485d7f1bf7da911ac4",
+    "LocalConjugacy/FiniteKernelTools.lean": "af4c9b707e6a4434515c29c85816e5696d1d22c671a36bf3b0affa30bc97d801",
+    "LocalConjugacy/FiniteLocalInclusion.lean": "942864b31e325bb8c7a46077ac9d2b1abf9ea18d39a3101ddc94e78bac68923f",
+    "LocalConjugacy/FiniteQuotientConjugacy.lean": "6f74f759fd43b6e35f95c7af7bc2ccfe2f6b34e2259c6c64f591d25a6ac6bbf7",
+    "LocalConjugacy/FiniteSupplementConjugacy.lean": "6b4a3ed089d4d1613856bb1346ebc33d5e8b6e17c526f2332bb1af168f4bf32b",
+    "LocalConjugacy/FiniteSylow.lean": "d69c1a2534bfaba9554f827bdb1bd055340b05cee6ad12a915e7ae9b1819ee0b",
+    "LocalConjugacy/FixedCocycle.lean": "94332e78767f52b2a34250614081ad6840aa5dad6257c472933553182dc54364",
+    "LocalConjugacy/FixedPointCorollary.lean": "625783b078a601a054322f206fdc15d6ae66bb0b6319b2938aad75b51c3f203c",
+    "LocalConjugacy/HallCohomology.lean": "f1c97bb6172877375a810fa525201aba70d89f5bc0c4ce6525d1297a8578e493",
+    "LocalConjugacy/HallRestriction.lean": "ee44e7e1712d0eb416106218cbcb7f145731cf2494047d814619faaef09d9ee5",
+    "LocalConjugacy/InvariantRestriction.lean": "b04a55460c3df64c3c39239c28322aeef8fe7d193b3d760e0130d6966375f467",
+    "LocalConjugacy/LocalInclusion.lean": "270208c6e66cf8239b79fd318000e957a30ffcf16b2ba2d0e9b01edcd832b551",
+    "LocalConjugacy/LocalSupplement.lean": "269eeba0db037cb912c85dce04503e841213d24a528b1764ce1a7f9397e1f3b9",
+    "LocalConjugacy/LocallyFiniteCocycles.lean": "d5826762dd6fb62c3e10b469d88738220b3e36ad367a3a39ce082c9097988a2e",
+    "LocalConjugacy/ManuscriptCohomology.lean": "80a507501b0a9448942be3f9bb1f1bfbbfd800d7cfbd09d1db911245e901a2c2",
+    "LocalConjugacy/NilpotentCoefficients.lean": "b9d368bbd92811b59e679cbe36b32014c68500f6c6e95bc57c1d308eb1492bdd",
+    "LocalConjugacy/NilpotentCoprimeFactors.lean": "4b1b73896acbd07ecf7d12b9aad599420eb2b221c849b877c31c68b5aa81ee06",
+    "LocalConjugacy/NilpotentRestriction.lean": "9b4685ffe4d07f22a84d54c2c14c1640832a36aeb44c7ed0bb90f8010a9d1342",
+    "LocalConjugacy/NonabelianComplement.lean": "5963b33ec0c777230e2e23267ab9949f984697027cd7ee2de74f087ec339acc6",
+    "LocalConjugacy/NormalIntersectionCompactness.lean": "325d76468149d0d1d10aa3e80d1b99d8809be66bd61306db50020d973ac87126",
+    "LocalConjugacy/PGroupSupplementReduction.lean": "c065341754d1e6c2490afaacd508e8bbb919d7ab4260f40e166f9a06bf07b1f8",
+    "LocalConjugacy/PrimaryPGroup.lean": "207c02e317cf230e93c6803a7611a0b963e16b740f572b1fda78a100129afa07",
+    "LocalConjugacy/ProP.lean": "0ed4be7654558f672a2c82bc2e0cfe599350d3df6d5b855b8443073f7c269e5c",
+    "LocalConjugacy/ProPFixedPoint.lean": "a1dc5572eb774f39da483afb5f359eec988477c0377f49ad916f3de7980ca70a",
+    "LocalConjugacy/ProcyclicSupplement.lean": "d01b5ccf9d8501d48258ecf1fa9618324bafa0301bd0e7b831fe50379a48ef4a",
+    "LocalConjugacy/ProfiniteHall.lean": "180779f467909fe91b20c80a1f47760836c59871d967b5d29b5b687575a26ffe",
+    "LocalConjugacy/ProfiniteQuotients.lean": "26eaac9fb5419a1c54a97d30d6311924547b5d1729041c421388d9d531a176e6",
+    "LocalConjugacy/ProfiniteSylow.lean": "dc47808cccfe86d207a1b64dd34f4000e7c428429a13b09af5cdb021dd4d49ac",
+    "LocalConjugacy/PronilpotentRestriction.lean": "bcfa849ceb131da7c05859a40cbcefce5ee0a9f54c425bb754359228b4d4dc77",
+    "LocalConjugacy/PronilpotentSylow.lean": "919df0ba81b30c4df1f28d0fb2466af671fc048efea3900a01bac7f277f0ed2b",
+    "LocalConjugacy/PronilpotentZorn.lean": "1bdeb2f282b17cac4f273443ce1182fd4218dac37c6876585e1e47e847666861",
+    "LocalConjugacy/QuotientReduction.lean": "e8eb37c3fa0c0656c0c1ec9e0a43df8fac68254b32e879ec3a00c60dbb2ffa69",
+    "LocalConjugacy/RestrictionComposition.lean": "f83f9b4da40a30be7d06223e5ff85c8ca0f325e9994c0e4c67e229b05e0aff50",
+    "LocalConjugacy/StableCocycles.lean": "cbdb9976e5f04baf00b4a5f62fa39b4ad044672807078b798db8374e9d100cb1",
+    "LocalConjugacy/StructuralImages.lean": "e036383f843a717c358356c0edc3a02cec47bdd309927ec8b82e2e31e6193017",
+    "LocalConjugacy/StructuralQuotients.lean": "77f92a2c3b13bd67949ae66c538b426f58ba6df05bdcd9960e88c4fc13fe0bf1",
+    "LocalConjugacy/SupersolvableCoefficients.lean": "fb7eafea3a769fae2eb12bc2559e9d4a09ac872115b2b8f65cc477ffd80034c5",
+    "LocalConjugacy/SupersolvableEmbeddings.lean": "1cf0d9ec64f771fa46cc48471f98167b6c3f07813ea7628818ac5dc7f33563aa",
+    "LocalConjugacy/SupersolvableHallAction.lean": "1d9075757ff4fd873a51889335bae75927a572da7b480c7e7a65003083c6a9a1",
+    "LocalConjugacy/SupersolvableReductions.lean": "9391d41ba6f181445283f6ea6513448fe55e2faad81084ef426301bb005ad55e",
+    "LocalConjugacy/SupersolvableRestriction.lean": "14efb9ae467d52e1be043daa84a6bc9cf5a772e63b61732998ec0ec6a805f87f",
+    "LocalConjugacy/SupersolvableStructure.lean": "aed75b4a68d7ada850ce2e665b4821d0993444c16ba2599bd6a729ca19a02f6e",
+    "LocalConjugacy/SupplementConjugacy.lean": "7d5d30d55a0b35a5901cb839834ff3d9e9a253e639f9d5e603dc02e80674cbc4",
+    "LocalConjugacy/SupplementInductionTools.lean": "dd5f4640546534e40b33bf4fa9de2bdc18b7f5661584ea8136674595e6ee20f6",
+    "LocalConjugacy/Supplements.lean": "f762b372134f962260e16ffcff4e5f7e4c5aee3775d20461e7df663fa91e0f0b",
+    "LocalConjugacy/SylowFiniteImages.lean": "26d3b6205828c80110daef5652ef1ded2e58248def0b2688009fd41097fd0707",
+    "LocalConjugacy/ZornRestriction.lean": "f9d63dac7db2181dddaee0889965bfa31d85785d197dbf41719165a8d5413a54",
+    "LocalConjugacy.lean": "ae142f10ce4e609b0a84700d33e6a4bb310d1c671c6ae13f1945b58bfb3c8ba2",
+    "Solution.lean": "39c063ed41c344ad1ab826dffcc18bfa6a1d30610c106b2fad6688cb36f3bd7c"
+  },
+  "full_comparator_run": false,
+  "nanoda_run": false,
+  "con_ron_run": false,
+  "submission_ready": false,
+  "missing_solution_declarations": [],
+  "missing_challenge_declarations": [],
+  "type_mismatches": [],
+  "disallowed_axioms": [],
+  "definitions_compared": 94,
+  "definition_mismatches": [],
+  "shared_helper_proofs_compared": 66,
+  "shared_helper_mismatches": [],
+  "results": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.theorem_1_1",
+      "same_type": true,
+      "solution_present": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.lemma_1_2",
+      "same_type": true,
+      "solution_present": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.corollary_1_3",
+      "same_type": true,
+      "solution_present": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.corollary_1_4",
+      "same_type": true,
+      "solution_present": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.proposition_2_1",
+      "same_type": true,
+      "solution_present": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.proposition_2_2",
+      "same_type": true,
+      "solution_present": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.proposition_2_3",
+      "same_type": true,
+      "solution_present": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.proposition_3_1",
+      "same_type": true,
+      "solution_present": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.proposition_3_2",
+      "same_type": true,
+      "solution_present": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.proposition_4_1",
+      "same_type": true,
+      "solution_present": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.proposition_4_2",
+      "same_type": true,
+      "solution_present": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.counterexample_quaternion",
+      "same_type": true,
+      "solution_present": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "challenge_present": true,
+      "name": "LocalConjugacy.counterexample_heisenberg",
+      "same_type": true,
+      "solution_present": true
+    }
+  ],
+  "supporting_theorems_audited": 926,
+  "supporting_theorems": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.wreathAction._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.transition_refl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NilpotentCoefficients.factors_commute"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.hall_complement_proper"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.equivGL._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.instGroupHeisenberg3._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NilpotentCoefficients.productEquiv._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.RestrictsTo._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.normal_complement_of_commute._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.coboundaryCocycle._proof_8"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cohomologous_trans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_hall_or_prime_index_reduction"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NonabelianComplement.inclusion_of_coboundary"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteKernelConjugacy.0.LocalConjugacy.finite_kernel_conjugacy_aux"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_of_map_eq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.mapCoefficient._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteConjugacyTools.0.LocalConjugacy.conjugate_eq_self_of_mem._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.quotient_inclusion_conjugator_from_factor"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.AbelianComplement.projection_mul"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proposition_3_1_of_pronilpotent_quotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_normal_of_prosupersolvable_largest"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.inflate._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.SupplementInductionTools.0.LocalConjugacy.supplements_subgroupOf._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleExtension.0.LocalConjugacy.extend_fixed_cocycle._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.RestrictionIsomorphism._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProfiniteSylow.0.LocalConjugacy.FiniteSylowSystem.subgroup_closed._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.locally_contains"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.HeisenbergSupersolvable.0.LocalConjugacy.HeisenbergExample.supersolvable_G._proof_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.matrixHom._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.card_complement"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.descend._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.actionProduct_continuous_inr"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.action._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.locallyConjugate_of_conjugate"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.fromMappedSubgroup._proof_3"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.projection_mul_reverse._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteAbelianCohomology.0.LocalConjugacy.FiniteAbelianCohomology.norm_coboundary._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proposition_3_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FixedCocycle.0.LocalConjugacy.fixed_cocycle_trivial_on_intersection._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteSupplementConjugacy.0.LocalConjugacy.finite_supplement_conjugacy_aux"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.le_of_map_mk'_eq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NilpotentRestriction.0.LocalConjugacy.finite_nilpotent_sylow_restriction_aux"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_supplement_conjugacy"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "LocalConjugacy.Heisenberg3.ext_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_eq_self_of_mem"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_top_of_pGroup_supplement"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.split_complement"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_of_continuous_injective"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.local_fixed_cocycle._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.instDecidableIsCocycle._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteQuotientConjugacy.0.LocalConjugacy.conjugate_of_conjugate_finite_quotients._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSubgroupSystem.mem_of_le"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.matrixHom._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.card_two"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.restrictionIsomorphism_of_zorn_steps"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.pronilpotent_J"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.theorem_1_1_via_finite_quotients"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.diagonal._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finite_nilpotent_local_inclusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.primaryDecomposition_pi"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instDecidablePredGMemSubgroupV._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instDecidablePredGMemSubgroupJ._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.inclusion_of_coboundary._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instDecidablePredGMemSubgroupH._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.not_contains"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "LocalConjugacy.Heisenberg3.ext"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.corollary_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.locallyFiniteGroup_of_finite"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.coefficientSubgroupAction._proof_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supplements_conjugate"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cocycleInvarianceSubgroup._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.instDecidableEquivalent._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.coboundaryCocycle._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_of_prosupersolvable_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.fixed_cocycle_trivial_on_intersection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_sylow_restriction_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.index_P2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.local_fixed_cocycle._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.twist_mul"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugateDomain._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.HeisenbergSupersolvable.0.LocalConjugacy.HeisenbergExample.supersolvable_G._proof_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.order_t"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_exists_normalHall"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylow_isSylowPro"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supplement_quotient_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instDecidablePredGMemSubgroupZ._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Compactness.0.LocalConjugacy.conjugate_of_closed_approximations._simp_1_6"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.ProcyclicSupplement.0.LocalConjugacy.exists_procyclic_supplement._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.hCoordinatesHom._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supplements_of_sup_eq_top"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cocycleInvarianceSubgroup._proof_3"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteAbelianCohomology.0.LocalConjugacy.FiniteAbelianCohomology.norm_coboundary._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.classAction._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.restriction_injective_of_locallyFinite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_sylow_restriction_injective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.instGroupHeisenberg3._proof_10"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instNormalGM"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProfiniteHall.0.LocalConjugacy.FiniteSubgroupSystem.subgroup_closed._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.Heisenberg3.mk.injEq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cohomologous_symm"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.descend._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_cocycle_openNormal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.SupersolvableStructure.0.LocalConjugacy.supersolvable_exists_cyclic_normal._proof_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.image_pow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.card_H1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.ofOnSubgroup._proof_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FixedCocycle.0.LocalConjugacy.fixed_cocycle_trivial_on_intersection._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteQuotientConjugacy.0.LocalConjugacy.conjugate_of_conjugate_finite_quotients._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.HeisenbergSupersolvable.0.LocalConjugacy.HeisenbergExample.supersolvable_G._proof_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.projection_mul_reverse._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.prosupersolvable_of_continuous_injective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HasProPrimes.ambient_image"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.eq_of_supplements_le._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_full_images"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_conjugate_sylow_le_of_not_dvd_index"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NilpotentCoefficients.factorCharacteristic"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.instGroupHeisenberg3._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.hom_eq_one_of_coprime_card"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cocycleAffineAction._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.no_common_fixed"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.instGroupHeisenberg3._proof_9"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylow_of_isSylowPro"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_minimal_closed_subgroup_of_chain_condition"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.projection_section"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.locallyContains_stabilizer_of_sylowFixedPoints"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cocycleInvarianceSubgroup._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.card_P2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteConjugacyTools.0.LocalConjugacy.conjugate_eq_self_of_mem._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_exists_prime_index"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.abelian_complement_inclusion_finite_kernel"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.prosupersolvable_prime_index_above_normal_sylow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.SupersolvableReductions.0.LocalConjugacy.supersolvable_largest_sylow_normal._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.subgroupImageHom._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.perm_mul"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_le_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isPGroup_quotient_image"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.sylow_coboundaries"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.QuaternionComplements.0.LocalConjugacy.QuaternionExample.sylow_two._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.nonabelian_N"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.invariant_pi_iff"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.local_fixed_cocycle._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.order_c"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.restrictionIsomorphism_comp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.card_subgroupOf_lt_finite_kernel"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.heisenbergInv._proof_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.projection_mul._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleActions.0.LocalConjugacy.coboundaryCocycle._simp_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.intersection_not_normal"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.supplements_conjugate._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.v._proof_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.SupplementInductionTools.0.LocalConjugacy.supplements_subgroupOf._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.transition_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finite_eq_top_of_locallyContains"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.locallyConjugate_of_locallyContains_card"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.instGroupHeisenberg3._proof_8"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.perm._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleActions.0.LocalConjugacy.coboundaryCocycle._simp_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_le_stabilizer_of_fixedPoint"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.locallyConjugate_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.mapCoefficient.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_card_eq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_le_of_quotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProfiniteSylow.0.LocalConjugacy.FiniteSylowSystem.subgroup_closed._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.pronilpotent_N"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.restrictCocycle._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.profinite_conjugacy_case_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.coefficientAction._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.P2_le"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.commutative_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isSylowPro_in_closed_subgroup"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.normal_complement_of_commute._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.sylow_three"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.primary_decomposition"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instNormalGV"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Compactness.0.LocalConjugacy.conjugate_of_closed_approximations._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finiteUpperHall._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.trivialCocycle._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.complement._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSubgroupSystem.map_subgroup"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteConjugacyTools.0.LocalConjugacy.conjugate_eq_self_of_mem._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.projection_mul._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.HeisenbergSupersolvable.0.LocalConjugacy.HeisenbergExample.supersolvable_G._proof_1_8"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_le_of_finite_quotient_inclusions"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.ext"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.StableCocycles.0.LocalConjugacy.invariant_cohomologous._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleInjectivity.0.LocalConjugacy.intertwiningAction._simp_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cocycleInvarianceSubgroup.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.perm_one"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.local_coboundary._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugateDomain._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.nilpotent_quotient_image"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.card_intertwiners"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProfiniteSylow.0.LocalConjugacy.FiniteSylowSystem.exists_compatible._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.locallyContains_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianFiniteKernel.0.LocalConjugacy.abelian_inclusion_finite_kernel_aux"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.projection_mul._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instFintypeG._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.onSubgroup._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.extend_cocycle_to_open_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.coprime_restriction_isomorphism"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.coefficientSubgroupAction._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NonabelianComplement.continuous_projection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supplements_subgroupOf"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cyclic_step_comap"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.complement_map_of_disjoint"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.counterexample"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.commute_prime_normal_of_large_primes._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.card_complement_dvd_supplement"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Profinite.toCompactSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instNormalGN"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supplements_of_locallyContains"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.card_three"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.conjugate_le_of_coboundary._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.instNormalGKernel"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleInvarianceSubgroup.0.LocalConjugacy.cocycleInvarianceSubgroup_isClosed._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.merge_coprime_conjugators"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProcyclicSupplement.0.LocalConjugacy.exists_procyclic_supplement._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cohomologous_on_bot"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.hCoordinates._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NonabelianComplement.local_inclusion_of_primary"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.hall_complement_restriction"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isProP_of_continuous_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.subgroupImageHom_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleInjectivity.0.LocalConjugacy.mem_cocycleCentralizer._simp_1_2"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.normal_complement_of_commute._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.index_eq_relIndex_of_supplements"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.instDecidablePredGMemSubgroupTwo._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugacy_case_map"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NormalIntersectionCompactness.0.LocalConjugacy.conjugate_of_normal_intersection_quotients._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.sign._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finite_nilpotent_supplement_conjugacy"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_top_of_pGroup_supplement_profinite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instDecidablePredGMemSubgroupJ._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.PrimaryDecomposition._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.nilpotent_primary_complement"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instNormalGZ"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.inclusion_of_coboundary._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.coefficientAction._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.component._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylow_smul_toSubgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.primaryDecomposition_pGroup_of_pronilpotent"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HallComplementSystem.functor._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HasProPrimes.of_ambient_images"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.mem_of_mem_sup_openNormal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.card_map_quotient_lt_finite_kernel"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.local_fixed_cocycle._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleFiniteQuotient.0.LocalConjugacy.exists_cocycle_openNormal._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.descend_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.functor._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.heisenbergHom._proof_2"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteQuotientConjugacy.0.LocalConjugacy.conjugate_of_conjugate_finite_quotients._simp_1_4"
+    },
+    {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.three_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.hCoordinates._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.nilpotent_quotient_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.matrixHom._proof_5"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FixedCocycle.0.LocalConjugacy.fixed_cocycle_trivial_on_intersection._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instNormalGBaseSubgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.jEquivC6._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_le_full_sylow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proposition_4_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.candidate_classification"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isProP_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.locally_equivalent_three"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.locallyContains_map_finite"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProPFixedPoint.0.LocalConjugacy.proP_fixed_point._simp_1_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.commute_prime_normal_of_large_primes._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.cyclicCoordinates._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isComplement'_map_mk'"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NilpotentRestriction.0.LocalConjugacy.nilpotent_coatom_prime_index._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.fixedPoint_of_conjugate_le_stabilizer"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instDecidablePredGMemSubgroupZ._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.actionProduct_topologicalGroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.action._proof_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.card_subgroupOf_lt_of_not_le"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.profinite_quotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_minimal_injectivity_counterexample"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.extend_stable_class_across_prime_index"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.coefficientSubgroupAction._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.prosupersolvable_hall_split_containing"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cohomologySetoid._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.prosupersolvable_commute_normal_proP"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.index_dvd_card_of_supplements"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isProP_mono"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_conj_le_of_conjugacy"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.restrictionIsomorphism_of_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteAbelianCohomology.norm_coboundary"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.matrix_mul"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HallComplementSystem.functor._proof_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteConjugacyTools.0.LocalConjugacy.conjugate_eq_self_of_mem._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.two._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.intertwiningAction._proof_9"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.coprime_of_disjoint_primes"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_mono"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.HallCohomology.0.LocalConjugacy.prosupersolvable_commute_normal_proP._simp_1_4"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.local_coboundary._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_map_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.supersolvable_G"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proposition_2_1_finite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.prosupersolvable_of_continuous_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.twistCocycle._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.compatibility"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSubgroupSystem.subgroup_closed"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.hCoordinates._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.matrixHom._proof_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.instDiscreteTopologyG"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.prosupersolvable_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.abelian_inclusion_finite_kernel"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.corestrictCoefficient._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.invariantUnder_of_dense_generator"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_complement"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.locallyConjugate_map_finite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_hall_split"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.AbelianComplement.projection_eq_one_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.nilpotent_of_pronilpotent_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_normal_of_pronilpotent"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.locallyConjugate_generated_profinite"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.projection_mul_reverse._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleNeighborhood.0.LocalConjugacy.extend_cocycle_to_open_subgroup._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_of_mulEquiv"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.prosupersolvable_coefficient_embedding"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_comp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.transporter_closed"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.hCoordinatesHom._proof_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleInjectivity.0.LocalConjugacy.intertwiningAction._simp_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.card_J"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.invariant_mapCoefficient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.IsHall.coprime"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instMulActionG\u03a9._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.sectionMap._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.matrix_injective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.normal_inf_of_common_sylow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_of_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Profinite.toT2Space"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.upperHall_normal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.hCoordinates_bijective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.prosupersolvable_complement_action"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_local_inclusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finite_supplements_of_locallyContains"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteQuotientConjugacy.0.LocalConjugacy.conjugate_of_conjugate_finite_quotients._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.supplements_conjugate._simp_1_7"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.SupplementInductionTools.0.LocalConjugacy.supplements_subgroupOf._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.HeisenbergSupersolvable.0.LocalConjugacy.HeisenbergExample.supersolvable_G._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.instGroupHeisenberg3._proof_5"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteConjugacyTools.0.LocalConjugacy.conjugate_eq_self_of_mem._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteQuotientConjugacy.0.LocalConjugacy.conjugate_of_conjugate_finite_quotients._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.coefficientSubgroupAction._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.HallCohomology.0.LocalConjugacy.prosupersolvable_commute_normal_proP._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.map_transition"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.local_fixed_cocycle._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.complementActionHom_continuous"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.StableCocycles.0.LocalConjugacy.invariant_cohomologous._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.transition.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugacy_case_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.involution_coboundaries"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.ExtendsTo.on_mapped_subgroup"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteQuotientConjugacy.0.LocalConjugacy.conjugate_of_conjugate_finite_quotients._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.conjugate_le_of_coboundary._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.local_coboundary._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.no_J_fixed"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.restrict_twist"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.matrixHom._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_sylow_restriction"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HasProPrimes.of_continuous_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_sylowPro_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.cyclicCoordinates._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.sylow_H1_subsingleton"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.subgroup_quotient_factors"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_full_sylow"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.HallCohomology.0.LocalConjugacy.prosupersolvable_commute_normal_proP._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HasPrimes.subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.step_Z"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.sylow_two_H1_trivial"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.corestrictCoefficient._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.HeisenbergSupersolvable.0.LocalConjugacy.HeisenbergExample.instNormalGV._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.prosupersolvable_iff_supersolvable"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.complementActionHom._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.functor._proof_5"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.normal_complement_of_commute._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proposition_3_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.functor._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NilpotentCoefficients.primeFact"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.normal_complement_of_commute._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.extendsTo_on_chain_intersection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.nilpotent_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.onSubgroup._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.AbelianComplement.conjugate_le_of_coboundary"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSubgroupSystem.mem_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NilpotentCoefficients.productEquiv_smul"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.sylow_three_H1_trivial"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NonabelianComplement.inverseCocycle._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.corollary_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.projection_mul_reverse._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.card_map_quotient_lt"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.step_G"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.procyclic_commutative"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instDecidableEqG._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.invariant_iff_twist"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.subgroup_le_of_finite_images"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.exists_compatible"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.projection_mul_reverse._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proposition_2_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_sylow_extension_zorn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_quotient_of_supplement"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.complements_locally_conjugate"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.perm._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_of_continuous_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.hCoordinates._proof_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugateDomain._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteAbelianCohomology.coboundaryHom._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_quotient_image"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_relIndex_not_dvd"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.sumBase._proof_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "LocalConjugacy.instDecidableEqHeisenberg3.decEq._proof_4"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "LocalConjugacy.Heisenberg3.mk.inj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.ofOnSubgroup._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cohomologous_of_zorn_step"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NormalIntersectionCompactness.0.LocalConjugacy.conjugate_of_normal_intersection_quotients._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.complement._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cohomologous_trivial_of_coprime_proP"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finite_nilpotent_sylow_restriction"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HallComplementSystem.exists_compatible"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.fixedPoint_iff_conjugate_le_stabilizer"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteAbelianCohomology.0.LocalConjugacy.FiniteAbelianCohomology.norm_coboundary._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.mk.sizeOf_spec"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.card_H"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.IsHallPro.eq_of_normal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.equivGL._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.merge_coprime_conjugators_profinite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.step_N"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.ExtendsTo.of_subgroup_top"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.fromMappedSubgroup._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.rotate._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.QuaternionComplements.0.LocalConjugacy.QuaternionExample.sylow_three._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proP_fixed_point"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.local_coboundary._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_closed"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isProP_iff_isPGroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.act_mul_Q"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sup_eq_top_of_supplements"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.StableCocycles.0.LocalConjugacy.invariant_cohomologous._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.primaryRestriction_distinguished"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.sumBase._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.step_M"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.normal_sylow_invariant_restriction"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.mk.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_of_mutual_inclusions_finiteIndex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.sylow_two"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isProP_subgroupOf"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProfiniteSylow.0.LocalConjugacy.FiniteSylowSystem.mem_subgroup._simp_1_2"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleNeighborhood.0.LocalConjugacy.extend_cocycle_to_open_subgroup._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.subgroupImageHom._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.primaryRestriction_bijective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.card_P3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instDiscreteTopologyG"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.restrictH1_distinguished"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NilpotentCoefficients.productEquiv._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.coboundary_of_card_two"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.actionProductHomeomorph._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.inf_normal_of_stabNormal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.matrixHom._proof_8"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.upperHall_isHallPro"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_top_of_not_dvd_index"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.fromMappedSubgroup._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteAbelianCohomology.0.LocalConjugacy.FiniteAbelianCohomology.norm_coboundary._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.commute_prime_normal_of_large_primes._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.two_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.nEquivHeisenberg._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cohomologous_refl"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.inclusion_of_coboundary._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProcyclicSupplement.0.LocalConjugacy.exists_procyclic_supplement._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleActions.0.LocalConjugacy.coboundaryCocycle._simp_7"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.eq_of_supplements_le._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.AbelianComplement.local_fixed_cocycle"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.Heisenberg.0.LocalConjugacy.HeisenbergExample.instNormalGN._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.three._proof_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.intersectionNormal_of_commutative"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_sylow_restriction_injective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.locallyConjugate_generated_of_common_sylow"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleInjectivity.0.LocalConjugacy.intertwiningAction._simp_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.normal_proP_le_sylowPro"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.inf_sup_eq_of_coprime_profinite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.profinite_conjugacy_case_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.nilpotent_supplement_conjugacy_via_finite_quotients"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finite_complement_conjugacy"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_minimal_stable_surjectivity_counterexample"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.not_equivalent"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.instGroupHeisenberg3._proof_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.two_conjugate"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finiteUpperHall_transition"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.extend_fixed_cocycle"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleInjectivity.0.LocalConjugacy.intertwiningAction._simp_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.procyclic_zpowers_closure"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.sylow_P3"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.commute_prime_normal_of_large_primes._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.matrixHom._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.classAction._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.split"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_of_conjugate_finite_quotients"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HallComplementSystem.map._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_largest_sylow_normal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate.eq_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.cocycleAffineAction._proof_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProcyclicSupplement.0.LocalConjugacy.exists_procyclic_supplement._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.AbelianComplement.projection_mul_right"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.sumBase._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.coefficientSubgroupAction._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_of_mutual_inclusions"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Conjugate.trans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.P3_le"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.card_cohomologyClass"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NonabelianComplement.inverseCocycle._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.actionProduct_profinite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.exponent_three_N"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.inclusion_of_coboundary._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.SupplementInductionTools.0.LocalConjugacy.supplements_subgroupOf._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteAbelianCohomology.local_coboundary"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.wreathAction._proof_5"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleNeighborhood.0.LocalConjugacy.extend_cocycle_to_open_subgroup._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.action._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.HeisenbergSupersolvable.0.LocalConjugacy.HeisenbergExample.instNormalGM._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.normal_complement_of_commute"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.relIndex_sup_dvd_card"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "LocalConjugacy.instDecidableEqHeisenberg3.decEq._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.ExtendsTo.of_le"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.nilpotent_coprime_split"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NonabelianComplement.local_inclusion_of_pronilpotent"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.supplements_conjugate._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NonabelianComplement.conjugationContinuousSMul"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.theorem_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HasProPrimes.map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_of_injective_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.matrix_covers"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_conjugate"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleNeighborhood.0.LocalConjugacy.extend_cocycle_to_open_subgroup._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.supplements_conjugate._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_subgroup_cocycle_openNormal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.wreathAction._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.action._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.inf_eq_inf_sylowPro_profinite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.commute_prime_normal_of_large_primes._proof_1_2"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.StableCocycles.0.LocalConjugacy.invariant_cohomologous._simp_1_4"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.local_fixed_cocycle._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.step_V"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.lemma_1_2_of_pronilpotent"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.HeisenbergSupersolvable.0.LocalConjugacy.HeisenbergExample.step"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NonabelianComplement.local_coboundary"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_isProP"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.classAction._proof_3"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.SupplementInductionTools.0.LocalConjugacy.supplements_subgroupOf._simp_1_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.StableCocycles.0.LocalConjugacy.invariant_cohomologous._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.AbelianComplement.projection_of_mem"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.local_coboundary._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isSylowPro_of_full_images"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSubgroupSystem.map_transition"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.component._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.functor._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HallComplementSystem.functor._proof_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.Compactness.0.LocalConjugacy.conjugate_of_closed_approximations._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.nilpotent_subgroup_map"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "LocalConjugacy.instFintypeHeisenberg3._proof_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.subgroupTop._proof_2"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleInjectivity.0.LocalConjugacy.intertwiningAction._simp_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.instDecidableEqG._proof_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteConjugacyTools.0.LocalConjugacy.conjugate_eq_self_of_mem._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.projection_mul._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.locallyContains_of_locallyConjugate"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.transitive_N"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.Compactness.0.LocalConjugacy.conjugate_of_closed_approximations._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.prosupersolvable_restricted_action"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.instFintypeHeisenberg3._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.act_mul"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.projection_mul_reverse._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.conjugate_le_of_coboundary._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NormalIntersectionCompactness.0.LocalConjugacy.conjugate_of_normal_intersection_quotients._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.stableRestriction_bijective"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleActions.0.LocalConjugacy.coboundaryCocycle._simp_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.coprime_prime_index_restriction"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianFiniteKernel.0.LocalConjugacy.abelian_complement_inclusion_finite_kernel._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_procyclic_supplement"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.restrictionIsomorphism_refl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.complement_false_eq_range"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugateDomain.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.fixedPoint_of_local_inclusion"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.conjugate_le_of_coboundary._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.lemma_1_2_of_prosupersolvable"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.orbit_eq_cohomologyClass"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.complement._proof_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.conjugate_le_of_coboundary._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Profinite.toIsTopologicalGroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_exists_prime_normal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proposition_4_1_via_finite_quotients"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleActions.0.LocalConjugacy.coboundaryCocycle._simp_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.inf_sup_eq_of_coprime"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.instGroupHeisenberg3._proof_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.nilpotent_coatom_prime_index"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.HallCohomology.0.LocalConjugacy.prosupersolvable_commute_normal_proP._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isSylowPro_of_intermediate"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.three._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteAbelianCohomology.coboundaryHom._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cohomologous_pi_iff"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.StableCocycles.0.LocalConjugacy.invariant_cohomologous._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cocycleAffineAction._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.instDecidablePredGMemSubgroupThree._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_chain_member_subset_open"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.index_P3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.extend_cocycle_across_trivial_factor"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProfiniteHall.0.LocalConjugacy.FiniteSubgroupSystem.mem_subgroup._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.subgroupTop._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.coboundary_of_card_three"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cohomologous_mapCoefficient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cutoff_hall_isComplement"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FixedCocycle.0.LocalConjugacy.fixed_cocycle_trivial_on_intersection._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_le_sup_of_quotient"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.ofOnSubgroup._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProfiniteHall.0.LocalConjugacy.FiniteSubgroupSystem.mem_subgroup._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.heisenberg_bijective"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.ProcyclicSupplement.0.LocalConjugacy.exists_procyclic_supplement._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_sylow_restriction"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.restrictCocycle._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleInjectivity.0.LocalConjugacy.intertwiningAction._simp_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.lemma_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugateDomain.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isSylowPro_of_card"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.action._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.eq_of_supplements_le._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_finite_invariant_coefficient_subgroup"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "LocalConjugacy.instFintypeHeisenberg3._proof_8"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleInvarianceSubgroup.0.LocalConjugacy.cocycleInvarianceSubgroup_isClosed._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.eq_of_supplements_le"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.actionProduct_continuous_inl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.profinite_closed_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.card_dvd_of_locallyContains"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.Heisenberg.0.LocalConjugacy.HeisenbergExample.index_P2._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.projection_mul_reverse._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.subgroup_closed"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.complements_not_conjugate"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.prosupersolvable_acting_group"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.continuous_hom_eq_one_of_coprime"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.normal_complement_of_commute._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proposition_4_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.primaryDecomposition_pGroup_of_restriction"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.supplements_map"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteConjugacyTools.0.LocalConjugacy.conjugate_eq_self_of_mem._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.trivialCocycle_invariant"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.conjugate_le_of_coboundary._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HasPrimes.le_normalHall"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proposition_2_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.mk.injEq"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.rotate._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.coefficientSubgroupAction._proof_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.pi._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.disjoint_of_cutoff_primes"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.two._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.coprime_prime_index_restriction_locallyFinite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.descend_invariant"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.ProcyclicSupplement.0.LocalConjugacy.exists_procyclic_supplement._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.instFintypeG._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.instFintypeG._proof_2"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.supplements_conjugate._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.invariant_cohomologous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.prosupersolvable_action_trivial_on_high_primes"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.sign._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianFiniteKernel.0.LocalConjugacy.abelian_inclusion_finite_kernel_aux._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.IsHallPro.le_normal"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.SupplementInductionTools.0.LocalConjugacy.supplements_subgroupOf._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isComplement'_of_supplements_inf"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.AbelianComplement.projection.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cohomologous_on_chain_intersection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proposition_2_1_of_finite_class"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isPGroup_map_of_continuous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.wreathPerm_mul"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.inclusion_of_coboundary._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.mapCoefficient._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proposition_2_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.three._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isSylowPro_in_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_prime_index_above_sylow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.intertwiningAction._proof_8"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.locallyConjugate_of_locallyContains_complement"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.AbelianComplement.finite_local_inclusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.commute_prime_normal_of_large_primes"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleActions.0.LocalConjugacy.coboundaryCocycle._simp_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NilpotentCoefficients.factorContinuousSMul"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.complementActionHom_injective"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.eq_of_supplements_le._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_sylow_restriction_injective_zorn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.heisenbergHom._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isSylowPro_subgroupOf"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.invariantH1Inhabited._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.pi._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.map_mul"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.transition_comp"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleNeighborhood.0.LocalConjugacy.extend_cocycle_to_open_subgroup._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteAbelianCohomology.0.LocalConjugacy.FiniteAbelianCohomology.norm_coboundary._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.HallCohomology.0.LocalConjugacy.prosupersolvable_commute_normal_proP._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Conjugate.map"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleExtension.0.LocalConjugacy.extend_fixed_cocycle._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.invariant_restriction"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.trivialCocycle.eq_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.NilpotentCoefficients.productEquiv._proof_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.Compactness.0.LocalConjugacy.conjugate_of_closed_approximations._simp_1_4"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NormalIntersectionCompactness.0.LocalConjugacy.conjugate_of_normal_intersection_quotients._simp_1_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteQuotientConjugacy.0.LocalConjugacy.conjugate_of_conjugate_finite_quotients._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_prime_index_above_normal_sylow"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finiteIndex_of_finite_supplement"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleInjectivity.0.LocalConjugacy.intertwiningAction._simp_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.normal_conjugator"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.map_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cocycles_factor_through_finite_quotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.act_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.normal_inf_of_common_sylow_profinite"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.projection_mul._simp_1_6"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FixedCocycle.0.LocalConjugacy.fixed_cocycle_trivial_on_intersection._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_le_of_normal_intersection_quotients"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.actionProduct_continuous_left"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProfiniteHall.0.LocalConjugacy.FiniteSubgroupSystem.subgroup_closed._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_hall_split_containing"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.instGroupHeisenberg3._proof_4"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteAbelianCohomology.0.LocalConjugacy.FiniteAbelianCohomology.norm_coboundary._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finiteCohomologySetoid._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supplement_image_quotient_eq_top"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.nilpotent_N"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.heisenbergInv._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.cocycle_eq_candidate"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instMulActionG\u03a9._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_eq_bot_of_not_primeDivisor"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isProP_of_quotient_images"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.counterexample_heisenberg"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.restriction_injective_of_coprime_supplement"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.heisenbergCoordinates._proof_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteAbelianCohomology.0.LocalConjugacy.FiniteAbelianCohomology.norm_coboundary._simp_1_2"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.eq_of_supplements_le._simp_1_2"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.projection_mul._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.extendsTo_of_zorn_step"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.eq_of_supplements_le._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Compactness.0.LocalConjugacy.conjugate_of_closed_approximations._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.mk.inj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.ofSubgroupTop._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.subgroup_card_lt_of_ne_top"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.hEquivProduct._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.card_N"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isSylowPro_of_index"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.eq_of_supplements_le._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.extendsTo_self"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.local_fixed_cocycle._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.commute_prime_normal_of_large_primes._simp_1_8"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NilpotentRestriction.0.LocalConjugacy.nilpotent_coatom_prime_index._proof_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NormalIntersectionCompactness.0.LocalConjugacy.conjugate_of_normal_intersection_quotients._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleExtension.0.LocalConjugacy.extend_fixed_cocycle._simp_1_3"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.projection_mul._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.NonabelianComplement.conjugationAction._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleExtension.0.LocalConjugacy.extend_fixed_cocycle._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.cyclic_J"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.closed_intermediate_image"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.openNormal_lt_top_of_prime_index"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NonabelianComplement.projection_mul_reverse"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.subgroup.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finite_abelian_local_inclusion"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.instDecidableIsCocycle._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.cyclicHom._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.heisenbergCoordinates._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.SupersolvableStructure.0.LocalConjugacy.supersolvable_exists_cyclic_normal._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.Heisenberg.0.LocalConjugacy.HeisenbergExample.index_P3._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Conjugate.symm"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.instDecidableEquivalent._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.commute_prime_normal_of_large_primes._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.IsHall.eq_of_normal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.actionProductHomeomorph._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.twist_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_sylow_extension"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finiteUpperHall_normal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.transition_mk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.inflate._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.stableRestriction_distinguished"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugateDomain._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSubgroupSystem.subgroup.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.inclusion_obstruction"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.closed_sup_normal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HasPrimes.of_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.HeisenbergSupersolvable.0.LocalConjugacy.HeisenbergExample.supersolvable_G._proof_1_3"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.commute_prime_normal_of_large_primes._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.quotient_conjugator_from_factor"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.ofSubgroupTop._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_of_closed_approximations"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.hasPrimes_singleton_iff_isPGroup"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.HallCohomology.0.LocalConjugacy.prosupersolvable_commute_normal_proP._simp_1_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "LocalConjugacy.Heisenberg3.mk.sizeOf_spec"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.nilpotent_of_injective_hom"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.equivGL._proof_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.local_coboundary._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_inv_cancel"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.wreathAction._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.trivialCocycle._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProfiniteSylow.0.LocalConjugacy.FiniteSylowSystem.mem_subgroup._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.HeisenbergSupersolvable.0.LocalConjugacy.HeisenbergExample.supersolvable_G._proof_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finiteUpperHall.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.exactly_two_classes"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.cyclic_bijective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.c_fixed"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.action._proof_4"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "LocalConjugacy.instDecidableEqHeisenberg3.decEq._proof_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finiteUpperHall_hall"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProcyclicSupplement.0.LocalConjugacy.exists_procyclic_supplement._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.complement_quotient_bijective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.action._proof_3"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleNeighborhood.0.LocalConjugacy.extend_cocycle_to_open_subgroup._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_minimal_surjectivity_counterexample"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.invariant_lift_of_injective_restriction"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proposition_2_2_finite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.classAction_closed_stabilizers"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_subgroup"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleExtension.0.LocalConjugacy.extend_fixed_cocycle._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.coefficientSubgroupContinuousSMul"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.supplements_conjugate._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_map_finite"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.HallCohomology.0.LocalConjugacy.prosupersolvable_commute_normal_proP._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.qi._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_openNormal_le_subgroup_open"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.supersolvable_exists_cyclic_normal"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.commute_prime_normal_of_large_primes._simp_1_9"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.fixed_cocycle_of_finite_class"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.LocallyConjugate.conjugate_left"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.nilpotent_quotient_image_of_pronilpotent"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finite_cohomologyClass"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.instGroupHeisenberg3._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.QuaternionComplements.0.LocalConjugacy.QuaternionExample.instNormalGKernel._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.ofOnSubgroup._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.restrict_cohomologous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.t_fixed"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.FixedCocycle.0.LocalConjugacy.fixed_cocycle_trivial_on_intersection._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HasPrimes.map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.HeisenbergSupersolvable.0.LocalConjugacy.HeisenbergExample.supersolvable_G._proof_1_6"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleExtension.0.LocalConjugacy.extend_fixed_cocycle._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.primaryDecomposition_of_equiv"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.two._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.sign_isCocycle"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.finite_normal_intersection_image"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instDecidablePredGMemSubgroupP2._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.inclusion_of_coboundary._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isSylowPro_conjugate"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_of_normal_intersection_quotients"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.matrixHom._proof_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.mem_cocycleCentralizer"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cocycle_constant_on_quotient_fibers"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleNeighborhood.0.LocalConjugacy.extend_cocycle_to_open_subgroup._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteKernelTools.0.LocalConjugacy.conjugate_of_mutual_inclusions_finiteIndex._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.nilpotent_subgroupOf"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleActions.0.LocalConjugacy.coboundaryCocycle._simp_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.twist_cohomologous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.PrimaryDecomposition._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleExtension.0.LocalConjugacy.extend_fixed_cocycle._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.mem_of_le"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.classAction._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.sylow_P2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.ext_iff"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NormalIntersectionCompactness.0.LocalConjugacy.conjugate_of_normal_intersection_quotients._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.SupersolvableReductions.0.LocalConjugacy.supersolvable_largest_sylow_normal._proof_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.IsHall.map_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instDecidablePredGMemSubgroupP3._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.isSylowPro_map_subtype"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.conjugate_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_cocycle_neighborhood_kernel"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NilpotentCoefficients.productEquiv._proof_3"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.inclusion_of_coboundary._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.abelian_local_inclusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.matrix_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_iff_nilpotent"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProPFixedPoint.0.LocalConjugacy.proP_fixed_point._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Compactness.0.LocalConjugacy.conjugate_of_closed_approximations._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.continuous_hom_eq_one_of_proPrimes"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.invariant_restriction_isomorphism"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.AbelianComplement.0.LocalConjugacy.AbelianComplement.conjugate_le_of_coboundary._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cohomologousFn_quotient_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.counterexample_quaternion"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleActions.0.LocalConjugacy.classAction_closed_stabilizers._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.proP_of_isPGroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.twistCocycle.eq_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.NonabelianComplement.0.LocalConjugacy.NonabelianComplement.local_coboundary._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.fixed_cocycle_of_locallyFinite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.stableRestriction._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.sectionMap._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.SupplementInductionTools.0.LocalConjugacy.supplements_subgroupOf._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.CocycleActions.0.LocalConjugacy.classAction_closed_stabilizers._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.action._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.IsHall.characteristic_of_normal"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ComplementConjugacy.0.LocalConjugacy.supplements_conjugate._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProfiniteSylow.0.LocalConjugacy.FiniteSylowSystem.exists_compatible._proof_1_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FiniteHall.0.LocalConjugacy.normal_complement_of_commute._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.actionProduct_continuous_right"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.continuous_toFun"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.corestrictCoefficient._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.stableRestriction._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.exists_sylowPro"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.ProPFixedPoint.0.LocalConjugacy.proP_fixed_point._simp_1_3"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "LocalConjugacy.instDecidableEqHeisenberg3.decEq._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.wreathAction._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cocycleCentralizer.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.wreathPerm_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.instDecidablePredGMemSubgroupThree._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_map_surjective_finite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.action._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.onSubgroup._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.pronilpotent_subgroup_image"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.order_three_coboundaries"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.instDecidablePredGMemSubgroupN._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.mem_subgroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.inf_eq_inf_sylowPro"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.NilpotentCoefficients.productEquiv._simp_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.FiniteSylowSystem.functor._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.NormalIntersectionCompactness.0.LocalConjugacy.conjugate_of_normal_intersection_quotients._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cocycle_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.sylowPro_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.twistCocycle._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Profinite.toTotallyDisconnectedSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.HeisenbergExample.diagonal._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.IsHallPro.hasProPrimes"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.QuaternionExample.locally_equivalent_two"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.FixedCocycle.0.LocalConjugacy.fixed_cocycle_trivial_on_intersection._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.Cocycle.imageSection_spec"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "_private.LocalConjugacy.Counterexamples.HeisenbergSupersolvable.0.LocalConjugacy.HeisenbergExample.instNormalGBaseSubgroup._proof_1"
+    },
+    {
+      "axioms": [],
+      "supporting_theorem": "_private.LocalConjugacy.StableCocycles.0.LocalConjugacy.invariant_cohomologous._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.primary_restriction_is_stable"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "supporting_theorem": "LocalConjugacy.cocycleInvarianceSubgroup_isClosed"
+    }
+  ]
+}

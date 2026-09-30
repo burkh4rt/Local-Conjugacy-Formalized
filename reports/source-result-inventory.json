@@ -1,0 +1,94 @@
+{
+  "source_sha256": "022b7c53635f6e18b93bbc60191e7c9c28288b0f813124e3365b5025722b67b9",
+  "results": [
+    {
+      "source": "Theorem 1.1",
+      "label": "thm:loc_conj",
+      "source_line": 70,
+      "statement_tex": "Let $N$ be a pronilpotent normal closed subgroup of a profinite group $G$. If either $G$ is prosupersolvable or $G/N$ is pronilpotent, then two closed supplements of $N$ are conjugate if and only if they are locally conjugate.",
+      "lean": "LocalConjugacy.theorem_1_1"
+    },
+    {
+      "source": "Lemma 1.2",
+      "label": "lem:loc_conj",
+      "source_line": 90,
+      "statement_tex": "For a profinite group $J$ and a finite nilpotent $J$-group $N$, if either $NJ$ is prosupersolvable or $J$ is pronilpotent, the map $\\phi \\mapsto \\times_{p\\in\\pi(J)} \\phi|_{J_p}$ induces an isomorphism $H^1(J,N) \\iso \\times_{p \\in \\pi(J)} \\inv_J H^1(J_p, N)$ of pointed sets, where  $J_p \\in \\Syl_p(J)$ for each $p \\in \\pi(J)$.",
+      "lean": "LocalConjugacy.lemma_1_2"
+    },
+    {
+      "source": "Corollary 1.3",
+      "label": "thm:loc_inclusion",
+      "source_line": 97,
+      "statement_tex": "Let $H$ be a closed subgroup of a profinite semidirect product $G=N \\semi J$ where $N$ is pronilpotent and either $G$ is prosupersolvable or $J$ is pronilpotent. If $N\\cap H \\normal N$ and $H$ contains a conjugate of some Sylow $p$-subgroup of $J$ for each prime $p$, then $H$ contains a conjugate of $J$.",
+      "lean": "LocalConjugacy.corollary_1_3"
+    },
+    {
+      "source": "Corollary 1.4",
+      "label": "cor:fix_pt",
+      "source_line": 103,
+      "statement_tex": "Suppose a profinite semidirect product $G=N \\semi J$ acts transitively on some nonempty set $\\Omega$ with closed point stabilizers $\\{G_\\alpha\\}_{\\alpha\\in\\Omega}$, where $N$ is pronilpotent and either $G$ is prosupersolvable or $J$ is pronilpotent. If $N_\\alpha \\normal N$ for some $\\alpha\\in\\Omega$, and for each prime $p$, a Sylow $p$-subgroup of $J$ fixes an element of $\\Omega$, then $J$ fixes an element of $\\Omega$.",
+      "lean": "LocalConjugacy.corollary_1_4"
+    },
+    {
+      "source": "Proposition 2.1",
+      "label": "prop:fixed_cocycle",
+      "source_line": 139,
+      "statement_tex": "For a profinite group $J$ and a locally finite, discrete $J$-group $N$ that is also a $p$-group, suppose $Q\\leq J$ is a procyclic $p_0$-group for some prime $p_0\\ne p$ and that $J_0 \\normal J$. If $\\phi \\in Z^1(J_0, N)$ is $Q$-invariant, then there exists $\\psi \\in Z^1(J_0,N)$ with $\\psi \\sim \\phi$ such that $\\psi^q = \\psi$ for all $q \\in Q$. Furthermore, $\\psi(q)=1$ for all $q\\in J_0\\cap Q$.",
+      "lean": "LocalConjugacy.proposition_2_1"
+    },
+    {
+      "source": "Proposition 2.2",
+      "label": "prop:coprime_iso",
+      "source_line": 155,
+      "statement_tex": "For a prosolvable group $J$ and a locally finite, discrete $J$-group $N$ that is also a $p$-group, suppose $J_0 \\normal J$ has prime index $p_0 \\ne p$. Then $\\res^J_{J_0}: H^1(J, N) \\xrightarrow\\iso \\inv_J H^1(J_0, N)$ is an isomorphism.",
+      "lean": "LocalConjugacy.proposition_2_2"
+    },
+    {
+      "source": "Proposition 2.3",
+      "label": "prop:res_pi",
+      "source_line": 177,
+      "statement_tex": "For a profinite group $J$ and a finite $J$-group $N$ that is also a $p$-group, suppose $NJ$ is prosupersolvable. Let $\\pi$ denote the set of primes not exceeding $p$ and let $Q$ be a Hall $\\pi$-subgroup of $J$. Then  $\\res^J_Q: H^1(J, N) \\xrightarrow\\iso H^1(Q, N)$ is an isomorphism.",
+      "lean": "LocalConjugacy.proposition_2_3"
+    },
+    {
+      "source": "Proposition 3.1",
+      "label": "prop:comps",
+      "source_line": 239,
+      "statement_tex": "Given $N$ and $G$ satisfying the hypotheses of Theorem~\\ref{thm:loc_conj} where $N$ is finite, two closed complements of $N$ are conjugate if and only if they are locally conjugate.",
+      "lean": "LocalConjugacy.proposition_3_1"
+    },
+    {
+      "source": "Proposition 3.2",
+      "label": "prop:thm_main_n_nilpotent",
+      "source_line": 250,
+      "statement_tex": "If $N$ is finite, Theorem~\\ref{thm:loc_conj} holds.",
+      "lean": "LocalConjugacy.proposition_3_2"
+    },
+    {
+      "source": "Proposition 4.1",
+      "label": "thm:loc_inclusion_ab",
+      "source_line": 303,
+      "statement_tex": "In a profinite group $G$, suppose $H, H' \\leq G$ each supplement some abelian $N \\normal G$. If for each prime $p$, $H$ contains a conjugate of some Sylow $p$-subgroup of $H'$, then $H$ contains a conjugate of $H'$.",
+      "lean": "LocalConjugacy.proposition_4_1"
+    },
+    {
+      "source": "Proposition 4.2",
+      "label": "thm:fix_pt_ab",
+      "source_line": 313,
+      "statement_tex": "Suppose a profinite group $G$ acts transitively and with closed point stabilizers on some nonempty set $\\Omega$ and that $H\\leq G$ supplements some abelian $N\\normal G$. If for each prime $p$, a Sylow $p$-subgroup of $H$ fixes an element of $\\Omega$, then $H$ fixes an element of $\\Omega$.",
+      "lean": "LocalConjugacy.proposition_4_2"
+    }
+  ],
+  "counterexamples": [
+    {
+      "source": "Introduction, quaternion example",
+      "source_line": 88,
+      "lean": "LocalConjugacy.counterexample_quaternion"
+    },
+    {
+      "source": "Introduction, Heisenberg example",
+      "source_line": 108,
+      "lean": "LocalConjugacy.counterexample_heisenberg"
+    }
+  ]
+}

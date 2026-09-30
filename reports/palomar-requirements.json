@@ -1,0 +1,10 @@
+{
+  "checked_on": "2026-09-30",
+  "instructions_url": "https://palomar-registry.org/how-to-submit",
+  "minimum_lean": "v4.35.0-rc2",
+  "policy_url": "https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md",
+  "policy_sha256": "32cfaa48ef8d51a6959df46f73ccff1482d8bbf89b4bb3f878498b518b11edcd",
+  "template_verifier_url": "https://github.com/PalomarRegistry/PalomarTemplate/blob/main/scripts/verify-comparator.sh",
+  "template_verifier_sha256": "4fefa0e6c779448143b3164f56e96c3b6f719de67da335fa445127ab55f9b1e2",
+  "limitations": "The website, full policy, and starter verifier do not describe identical trusted-tool provisioning. The submitted config uses only their common permitted fields; local Linux replay follows the starter verifier. Palomar controls its own verification pipeline."
+}

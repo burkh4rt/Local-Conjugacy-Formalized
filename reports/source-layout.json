@@ -1,0 +1,372 @@
+{
+  "files": [
+    {
+      "file": "Challenge.lean",
+      "lines": 614
+    },
+    {
+      "file": "LocalConjugacy.lean",
+      "lines": 25
+    },
+    {
+      "file": "LocalConjugacy/AbelianComplement.lean",
+      "lines": 108
+    },
+    {
+      "file": "LocalConjugacy/AbelianFiniteKernel.lean",
+      "lines": 176
+    },
+    {
+      "file": "LocalConjugacy/AbelianFixedPoint.lean",
+      "lines": 27
+    },
+    {
+      "file": "LocalConjugacy/AbelianInclusion.lean",
+      "lines": 49
+    },
+    {
+      "file": "LocalConjugacy/AbelianManuscript.lean",
+      "lines": 80
+    },
+    {
+      "file": "LocalConjugacy/ActionProductTopology.lean",
+      "lines": 53
+    },
+    {
+      "file": "LocalConjugacy/Actions.lean",
+      "lines": 59
+    },
+    {
+      "file": "LocalConjugacy/CocycleActions.lean",
+      "lines": 152
+    },
+    {
+      "file": "LocalConjugacy/CocycleDescent.lean",
+      "lines": 133
+    },
+    {
+      "file": "LocalConjugacy/CocycleExtension.lean",
+      "lines": 83
+    },
+    {
+      "file": "LocalConjugacy/CocycleFiniteQuotient.lean",
+      "lines": 90
+    },
+    {
+      "file": "LocalConjugacy/CocycleInjectivity.lean",
+      "lines": 124
+    },
+    {
+      "file": "LocalConjugacy/CocycleInvarianceSubgroup.lean",
+      "lines": 69
+    },
+    {
+      "file": "LocalConjugacy/CocycleNeighborhood.lean",
+      "lines": 114
+    },
+    {
+      "file": "LocalConjugacy/CocycleProducts.lean",
+      "lines": 144
+    },
+    {
+      "file": "LocalConjugacy/CocycleRebase.lean",
+      "lines": 69
+    },
+    {
+      "file": "LocalConjugacy/CocycleZorn.lean",
+      "lines": 262
+    },
+    {
+      "file": "LocalConjugacy/Cohomology.lean",
+      "lines": 122
+    },
+    {
+      "file": "LocalConjugacy/Compactness.lean",
+      "lines": 63
+    },
+    {
+      "file": "LocalConjugacy/ComplementConjugacy.lean",
+      "lines": 131
+    },
+    {
+      "file": "LocalConjugacy/ComplementSupersolvable.lean",
+      "lines": 76
+    },
+    {
+      "file": "LocalConjugacy/Conjugation.lean",
+      "lines": 56
+    },
+    {
+      "file": "LocalConjugacy/CoprimeCohomology.lean",
+      "lines": 47
+    },
+    {
+      "file": "LocalConjugacy/CoprimeRestriction.lean",
+      "lines": 55
+    },
+    {
+      "file": "LocalConjugacy/CounterexampleResults.lean",
+      "lines": 74
+    },
+    {
+      "file": "LocalConjugacy/Counterexamples/Heisenberg.lean",
+      "lines": 269
+    },
+    {
+      "file": "LocalConjugacy/Counterexamples/HeisenbergIdentification.lean",
+      "lines": 52
+    },
+    {
+      "file": "LocalConjugacy/Counterexamples/HeisenbergStructure.lean",
+      "lines": 35
+    },
+    {
+      "file": "LocalConjugacy/Counterexamples/HeisenbergSupersolvable.lean",
+      "lines": 122
+    },
+    {
+      "file": "LocalConjugacy/Counterexamples/Quaternion.lean",
+      "lines": 126
+    },
+    {
+      "file": "LocalConjugacy/Counterexamples/QuaternionComplements.lean",
+      "lines": 155
+    },
+    {
+      "file": "LocalConjugacy/Counterexamples/QuaternionMatrix.lean",
+      "lines": 64
+    },
+    {
+      "file": "LocalConjugacy/Counterexamples/QuaternionSylow.lean",
+      "lines": 134
+    },
+    {
+      "file": "LocalConjugacy/Definitions.lean",
+      "lines": 211
+    },
+    {
+      "file": "LocalConjugacy/ExampleDefinitions.lean",
+      "lines": 129
+    },
+    {
+      "file": "LocalConjugacy/FiniteAbelianCohomology.lean",
+      "lines": 90
+    },
+    {
+      "file": "LocalConjugacy/FiniteCoefficientSubgroup.lean",
+      "lines": 78
+    },
+    {
+      "file": "LocalConjugacy/FiniteConjugacyTools.lean",
+      "lines": 165
+    },
+    {
+      "file": "LocalConjugacy/FiniteHall.lean",
+      "lines": 139
+    },
+    {
+      "file": "LocalConjugacy/FiniteKernelConjugacy.lean",
+      "lines": 154
+    },
+    {
+      "file": "LocalConjugacy/FiniteKernelSylow.lean",
+      "lines": 109
+    },
+    {
+      "file": "LocalConjugacy/FiniteKernelTools.lean",
+      "lines": 192
+    },
+    {
+      "file": "LocalConjugacy/FiniteLocalInclusion.lean",
+      "lines": 88
+    },
+    {
+      "file": "LocalConjugacy/FiniteQuotientConjugacy.lean",
+      "lines": 107
+    },
+    {
+      "file": "LocalConjugacy/FiniteSupplementConjugacy.lean",
+      "lines": 134
+    },
+    {
+      "file": "LocalConjugacy/FiniteSylow.lean",
+      "lines": 46
+    },
+    {
+      "file": "LocalConjugacy/FixedCocycle.lean",
+      "lines": 110
+    },
+    {
+      "file": "LocalConjugacy/FixedPointCorollary.lean",
+      "lines": 26
+    },
+    {
+      "file": "LocalConjugacy/HallCohomology.lean",
+      "lines": 198
+    },
+    {
+      "file": "LocalConjugacy/HallRestriction.lean",
+      "lines": 86
+    },
+    {
+      "file": "LocalConjugacy/InvariantRestriction.lean",
+      "lines": 109
+    },
+    {
+      "file": "LocalConjugacy/LocalInclusion.lean",
+      "lines": 95
+    },
+    {
+      "file": "LocalConjugacy/LocalSupplement.lean",
+      "lines": 73
+    },
+    {
+      "file": "LocalConjugacy/LocallyFiniteCocycles.lean",
+      "lines": 147
+    },
+    {
+      "file": "LocalConjugacy/ManuscriptCohomology.lean",
+      "lines": 86
+    },
+    {
+      "file": "LocalConjugacy/NilpotentCoefficients.lean",
+      "lines": 120
+    },
+    {
+      "file": "LocalConjugacy/NilpotentCoprimeFactors.lean",
+      "lines": 69
+    },
+    {
+      "file": "LocalConjugacy/NilpotentRestriction.lean",
+      "lines": 82
+    },
+    {
+      "file": "LocalConjugacy/NonabelianComplement.lean",
+      "lines": 149
+    },
+    {
+      "file": "LocalConjugacy/NormalIntersectionCompactness.lean",
+      "lines": 108
+    },
+    {
+      "file": "LocalConjugacy/PGroupSupplementReduction.lean",
+      "lines": 108
+    },
+    {
+      "file": "LocalConjugacy/PrimaryPGroup.lean",
+      "lines": 72
+    },
+    {
+      "file": "LocalConjugacy/ProP.lean",
+      "lines": 71
+    },
+    {
+      "file": "LocalConjugacy/ProPFixedPoint.lean",
+      "lines": 34
+    },
+    {
+      "file": "LocalConjugacy/ProcyclicSupplement.lean",
+      "lines": 61
+    },
+    {
+      "file": "LocalConjugacy/ProfiniteHall.lean",
+      "lines": 264
+    },
+    {
+      "file": "LocalConjugacy/ProfiniteQuotients.lean",
+      "lines": 77
+    },
+    {
+      "file": "LocalConjugacy/ProfiniteSylow.lean",
+      "lines": 366
+    },
+    {
+      "file": "LocalConjugacy/PronilpotentRestriction.lean",
+      "lines": 105
+    },
+    {
+      "file": "LocalConjugacy/PronilpotentSylow.lean",
+      "lines": 49
+    },
+    {
+      "file": "LocalConjugacy/PronilpotentZorn.lean",
+      "lines": 138
+    },
+    {
+      "file": "LocalConjugacy/QuotientReduction.lean",
+      "lines": 79
+    },
+    {
+      "file": "LocalConjugacy/RestrictionComposition.lean",
+      "lines": 41
+    },
+    {
+      "file": "LocalConjugacy/StableCocycles.lean",
+      "lines": 35
+    },
+    {
+      "file": "LocalConjugacy/StructuralImages.lean",
+      "lines": 92
+    },
+    {
+      "file": "LocalConjugacy/StructuralQuotients.lean",
+      "lines": 52
+    },
+    {
+      "file": "LocalConjugacy/SupersolvableCoefficients.lean",
+      "lines": 54
+    },
+    {
+      "file": "LocalConjugacy/SupersolvableEmbeddings.lean",
+      "lines": 60
+    },
+    {
+      "file": "LocalConjugacy/SupersolvableHallAction.lean",
+      "lines": 87
+    },
+    {
+      "file": "LocalConjugacy/SupersolvableReductions.lean",
+      "lines": 186
+    },
+    {
+      "file": "LocalConjugacy/SupersolvableRestriction.lean",
+      "lines": 171
+    },
+    {
+      "file": "LocalConjugacy/SupersolvableStructure.lean",
+      "lines": 229
+    },
+    {
+      "file": "LocalConjugacy/SupplementConjugacy.lean",
+      "lines": 77
+    },
+    {
+      "file": "LocalConjugacy/SupplementInductionTools.lean",
+      "lines": 170
+    },
+    {
+      "file": "LocalConjugacy/Supplements.lean",
+      "lines": 70
+    },
+    {
+      "file": "LocalConjugacy/SylowFiniteImages.lean",
+      "lines": 59
+    },
+    {
+      "file": "LocalConjugacy/ZornRestriction.lean",
+      "lines": 56
+    },
+    {
+      "file": "Solution.lean",
+      "lines": 11
+    },
+    {
+      "file": "scripts/Audit.lean",
+      "lines": 75
+    }
+  ],
+  "source_fingerprints_match": true,
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "mathlib_revision": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "largest_source_lines": 614
+}

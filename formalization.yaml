@@ -1,0 +1,246 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/v0.4.schema.json
+---
+version: v0.4
+project:
+  name: Local conjugacy in prosolvable groups
+  description:
+    Lean 4 formalization of all eleven numbered results and both counterexamples in Local conjugacy
+    in prosolvable groups, arXiv:2609.37678v1. Closed supplements of a pronilpotent normal subgroup
+    are conjugate exactly when locally conjugate under the stated structural hypotheses. Continuous
+    nonabelian cohomology has the stated primary restriction decomposition. Local inclusion and
+    fixed-point results, the GL(2,3) quaternion counterexample, and the order-162 Heisenberg
+    wreath-product counterexample are formalized.
+  authors:
+    - name: Michael C. Burkhart
+      orcid: "0000-0002-2772-5840"
+  responsible_maintainers:
+    - name: Michael C. Burkhart
+      orcid: "0000-0002-2772-5840"
+  license: Apache-2.0
+classification:
+  arxiv:
+    - math.GR
+  msc2020:
+    - "20E18"
+    - "20E45"
+    - "20J06"
+    - "05E18"
+sources:
+  - title: Local conjugacy in prosolvable groups
+    authors:
+      - Michael C. Burkhart
+    type: paper
+    id: arXiv:2609.37678v1
+    location: https://arxiv.org/abs/2609.37678v1
+    relationship: formalizes
+    author_endorsement: participated
+    note:
+      "Submitted 2026-09-29. The source author requested this formalization and will personally
+      verify definitions and theorem statements. That review is pending. The original arXiv source
+      archive and unmodified TeX are included in sources/; the TeX includes its bibliography.
+      SHA-256: 022b7c53635f6e18b93bbc60191e7c9c28288b0f813124e3365b5025722b67b9. Code licensing does
+      not relicense the paper."
+related_formalizations:
+  - id: sha256:f1ce48b29c3c733bcb1ecf3c8869f75c3826e089da50f37f37ae65f6c9420718
+    relationship: adapts
+    note:
+      The immediately preceding local lcp-formalized development. This identifier hashes
+      reports/reused-lcp-sources.json, which records individual reused source hashes. The complete
+      substantive proof sources are copied into this project. Statements were aligned with arXiv v1
+      and the concrete counterexamples were strengthened. The old directory is not a dependency.
+  - id: sha256:8a7711561afd8ec380b71889701ded0865a956039af7429341482dd09069ae99
+    relationship: adapts
+    note:
+      Earlier local development in the sister directory local-conjugacy-prosolvable-formalized, with
+      file fingerprints and the aggregate hash definition in reports/reused-sources.json. Its group
+      theory and cohomology infrastructure was reused and revised. Current numbered results use the
+      updated hypotheses and proof structure. It is recorded as prior work, not a dependency of this
+      project.
+  - id: sha256:e01d6e5c43ba52cb970b533dd2abed2572fae1587c8cc3a24c0960110b3043b3
+    relationship: adapts
+    note:
+      The earlier local file _local_conjugacy_inclusion.lean supplies part of
+      QuotientReduction.lean. This provenance and fingerprint are inherited from the reused
+      development. The file's original generating model and independent review status were not
+      established. See NOTICE.
+status:
+  scope:
+    "Thirteen compared declarations: every numbered result (including Lemma 1.2) and the two
+    Introduction counterexamples in arXiv v1. All proofs are present. Lemma 1.2 is explicitly a
+    pointed bijection on actual quotient cohomology. Propositions 2.1 and 2.2 retain infinite
+    locally finite discrete coefficients. Proposition 2.3 has no extra prosolvability hypothesis.
+    Propositions 3.1 and 3.2 have finite N and profinite G. Theorem 1.1 has arbitrary pronilpotent
+    N. Concrete counterexamples include their group identifications, cohomology and conjugacy
+    failures. Counts exclude deliberate Challenge proof holes and the noncompiled statement
+    template."
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+automation:
+  methods:
+    - method: agent
+      models:
+        - GPT-6
+      framework: OpenAI Codex
+      tool_setup:
+        One primary Codex agent, without delegated agents or external proof-generation services.
+        Adapted the existing local Lean development, read arXiv v1 and current Palomar requirements,
+        added group identifications and counterexample proofs, rebuilt with pinned Lean/Mathlib, and
+        audited theorem types and transitive axioms. All finite computations use ordinary decide.
+        Prior development also records GPT-6 assistance through Codex. Local Comparator was run in
+        its documented unsandboxed mode on macOS with Lean, NanoDa and con-ron; all accepted. Shared
+        generated proofs were replaced where necessary to make Challenge and Solution match exactly.
+      cost:
+        wall_time: Interactive development; not separately metered
+        spend_usd: not tracked
+        hardware: Local Apple Silicon Mac
+      prompting_notes:
+        Prepare a Palomar submission in Local-Conjugacy-Formalized, namespace LocalConjugacy,
+        closely matching every Theorem, Corollary, Proposition and both counterexamples in
+        arXiv:2609.37678; include a read-back. The author will personally verify definitions and
+        theorem statements. Lemma 1.2 is included as well.
+  spend_usd: not tracked
+  notes:
+    The human source author supplied the mathematics, requested the formalization, and directed the
+    scope and fidelity requirements. The agent adapted existing proofs, added explicit concrete
+    identifications and fuller counterexample statements, and performed the documented read-back.
+    Human statement review is pending. Local verification is distinguished from Palomar verification
+    and registration.
+fidelity:
+  divergences:
+    No known statement-level weakening after the read-back in docs/read-back.md. Right exponent
+    notation is represented with left conjugation and left actions. S3 uses the standard order-six
+    dihedral presentation. The Heisenberg group uses its upper-unitriangular coordinate law; the
+    isomorphism to the constructed N is proved. The quaternion semidirect product is explicitly
+    isomorphic to GL(2,3). Proposition 2.2 expands the twisting and coprime fiber argument.
+    Proposition 4.1 proves the abelian complement input via finite-quotient cocycle norms rather
+    than invoking Shin as an unproved premise. The main proof follows the two Zorn arguments,
+    finite-N induction and compactness through G/(N cap U). Proposition 4.2 is supplied with a proof
+    via Proposition 4.1. See docs/manuscript-correspondence.md for exact proof files and remaining
+    explanatory differences.
+review:
+  status: author-verified
+  reviewers: []
+  notes:
+    Agent read-back against the downloaded arXiv v1 TeX; all thirteen exact compiled statement
+    types, 94 shared definitions and 66 helper proofs match. All 926 local supporting theorem
+    declarations were audited for transitive axioms. The local unsandboxed Comparator passed, with
+    Lean, NanoDa and con-ron accepting the exported proof (28,033 declarations reported by con-ron).
+    See reports/validation.json and reports/local-comparator-validation.json. This is not an
+    official Palomar or sandboxed verification. The source author has reserved personal verification
+    of definitions and statements before submission; that review was completed. No publication,
+    submission or registration has occurred.
+alignment:
+  namespace: LocalConjugacy
+  statements:
+    - source: Theorem 1.1
+      lean: LocalConjugacy.theorem_1_1
+      module: LocalConjugacy.NormalIntersectionCompactness
+      status: proved
+      note:
+        "Matches: arbitrary profinite G; closed normal pronilpotent N; both closed supplements;
+        either G prosupersolvable or G/N pronilpotent; conjugacy iff local conjugacy. No finite-N
+        restriction."
+    - source: Lemma 1.2
+      lean: LocalConjugacy.lemma_1_2
+      module: LocalConjugacy.ManuscriptCohomology
+      status: proved
+      note:
+        "Matches: profinite J, finite discrete nilpotent coefficient group with continuous action;
+        either NJ prosupersolvable or J pronilpotent; simultaneous restriction is bijective onto the
+        full product of stable classes indexed by π(J). Preservation of the distinguished class is
+        explicitly conjoined in the compared theorem."
+    - source: Corollary 1.3
+      lean: LocalConjugacy.corollary_1_3
+      module: LocalConjugacy.LocalInclusion
+      status: proved
+      note:
+        "Matches: internal semidirect product of closed factors, pronilpotent N, the same structural
+        alternative, and N∩H normal in N. A possibly different ambient conjugator and Sylow subgroup
+        is allowed for every prime. The conclusion is inclusion of a conjugate of J."
+    - source: Corollary 1.4
+      lean: LocalConjugacy.corollary_1_4
+      module: LocalConjugacy.FixedPointCorollary
+      status: proved
+      note:
+        "Matches: nonempty transitive G-set with every stabilizer closed, and normal N-stabilizer at
+        some point. Local fixed points may differ with the prime. No topology or continuous-action
+        assumption is imposed on Ω."
+    - source: Proposition 2.1
+      lean: LocalConjugacy.proposition_2_1
+      module: LocalConjugacy.LocallyFiniteCocycles
+      status: proved
+      note:
+        "Matches: locally finite, possibly infinite, discrete p-group N; closed normal J₀; closed
+        procyclic pro-p₀ subgroup Q, p₀≠p; Q-stable cocycle. Conclusion gives a cohomologous
+        literally Q-fixed representative trivial on J₀∩Q. The symmetric cohomology relation reverses
+        the paper's displayed ψ∼φ harmlessly."
+    - source: Proposition 2.2
+      lean: LocalConjugacy.proposition_2_2
+      module: LocalConjugacy.ManuscriptCohomology
+      status: proved
+      note:
+        "Matches: prosolvable J, locally finite discrete p-group N, closed normal J₀ of prime index
+        p₀≠p. The actual restriction on quotient cohomology is bijective onto J-stable classes. Its
+        distinguished-point preservation is proved in the shared definitions."
+    - source: Proposition 2.3
+      lean: LocalConjugacy.proposition_2_3
+      module: LocalConjugacy.HallRestriction
+      status: proved
+      note:
+        "Matches: profinite J, finite discrete p-group N, prosupersolvable NJ, arbitrary Hall
+        subgroup for primes ≤p, and bijectivity onto all H¹(Q,N). The obsolete extra hypothesis
+        `Prosolvable J` was removed from both Challenge and Solution."
+    - source: Proposition 3.1
+      lean: LocalConjugacy.proposition_3_1
+      module: LocalConjugacy.ComplementSupersolvable
+      status: proved
+      note:
+        "Matches: the hypotheses of Theorem 1.1 with finite N and two closed complements. Replaced
+        the older locally-finite/discrete signature with `[Finite N]`. Discreteness is now derived
+        from finiteness and the inherited Hausdorff topology."
+    - source: Proposition 3.2
+      lean: LocalConjugacy.proposition_3_2
+      module: LocalConjugacy.FiniteKernelConjugacy
+      status: proved
+      note:
+        "Matches: exactly Theorem 1.1 with finite N; G is still allowed to be infinite profinite."
+    - source: Proposition 4.1
+      lean: LocalConjugacy.proposition_4_1
+      module: LocalConjugacy.AbelianManuscript
+      status: proved
+      note:
+        "Matches: arbitrary profinite G, closed abelian normal N, two closed supplements H and H′,
+        local inclusion implies inclusion of an ambient conjugate. No solvability or
+        semidirect-product assumption is added."
+    - source: Proposition 4.2
+      lean: LocalConjugacy.proposition_4_2
+      module: LocalConjugacy.AbelianFixedPoint
+      status: proved
+      note:
+        "Matches: arbitrary transitive nonempty G-set with closed stabilizers, closed H
+        supplementing closed abelian normal N, local Sylow fixed points imply an H-fixed point."
+    - source: Introduction, quaternion counterexample
+      lean: LocalConjugacy.counterexample_quaternion
+      module: LocalConjugacy.CounterexampleResults
+      status: proved
+      note:
+        Uses the explicit Q₈ ⋊ S₃ action with a proved isomorphism to GL(2,3); literal cardinality
+        two of the quotient cohomology set; trivial Sylow cohomology; actual complements locally
+        conjugate at every prime but not conjugate in the ambient group.
+    - source: Introduction, Heisenberg counterexample
+      lean: LocalConjugacy.counterexample_heisenberg
+      module: LocalConjugacy.CounterexampleResults
+      status: proved
+      note:
+        Identifies G with the imprimitive C₃ ≀ S₃, N with the three-coordinate Heisenberg group over
+        F₃, J with C₆, and H with C₃×S₃. Proves all four orders, nilpotence of N and J,
+        supersolvability of G, the splitting, local inclusion at every prime, failure of global
+        inclusion, and failure of normality of N∩H in N.
+acknowledgements:
+  Lean and Mathlib contributors; Palomar and Comparator projects; inherited local formalization work
+  documented in NOTICE and reports/reused-sources.json and reports/reused-lcp-sources.json. The
+  Apache-2.0 license and attributions are retained.
